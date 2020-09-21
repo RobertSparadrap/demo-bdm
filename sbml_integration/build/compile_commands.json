@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/bdm/demo/sbml_integration/build",
+  "command": "/usr/bin/c++ -DBDMSYS=\\\"/home/bdm/biodynamo/build\\\" -DUSE_DICT -DUSE_NUMA -I/home/bdm/biodynamo/build/third_party/root/include -I/home/bdm/demo/sbml_integration/build/omp -I/home/bdm/biodynamo/build/include -I/home/bdm/demo/sbml_integration/src  -Wall -Wno-missing-braces -m64 -fPIC -fopenmp -O3 -DNDEBUG -fopenmp -std=c++14 -o CMakeFiles/sbml_integration.dir/src/sbml_integration.cc.o -c /home/bdm/demo/sbml_integration/src/sbml_integration.cc",
+  "file": "/home/bdm/demo/sbml_integration/src/sbml_integration.cc"
+},
+{
+  "directory": "/home/bdm/demo/sbml_integration/build",
+  "command": "/usr/bin/c++ -DBDMSYS=\\\"/home/bdm/biodynamo/build\\\" -DUSE_DICT -DUSE_NUMA -I/home/bdm/biodynamo/build/third_party/root/include -I/home/bdm/demo/sbml_integration/build/omp -I/home/bdm/biodynamo/build/include -I/home/bdm/demo/sbml_integration/src  -Wall -Wno-missing-braces -m64 -fPIC -fopenmp -O3 -DNDEBUG -fopenmp -std=c++14 -o CMakeFiles/sbml_integration.dir/sbml_integration_dict.cc.o -c /home/bdm/demo/sbml_integration/build/sbml_integration_dict.cc",
+  "file": "/home/bdm/demo/sbml_integration/build/sbml_integration_dict.cc"
+},
+{
+  "directory": "/home/bdm/demo/sbml_integration/build",
+  "command": "/usr/bin/c++ -DBDMSYS=\\\"/home/bdm/biodynamo/build\\\" -DUSE_DICT -DUSE_NUMA -I/home/bdm/demo/sbml_integration/test -I/home/bdm/biodynamo/build/third_party/root/include -I/home/bdm/demo/sbml_integration/build/omp -I/home/bdm/biodynamo/build/include -I/home/bdm/demo/sbml_integration/src  -Wall -Wno-missing-braces -m64 -fPIC -fopenmp -O3 -DNDEBUG -o CMakeFiles/clang-tidy-header-helper.dir/clang_tidy_header_helper.cc.o -c /home/bdm/demo/sbml_integration/build/clang_tidy_header_helper.cc",
+  "file": "/home/bdm/demo/sbml_integration/build/clang_tidy_header_helper.cc"
+}
+]

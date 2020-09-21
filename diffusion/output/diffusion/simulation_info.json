@@ -1,0 +1,17 @@
+{
+  "simulation": {
+    "name":"diffusion",
+    "result_dir":"output/diffusion"
+  },
+  "sim_objects": [
+    {
+      "name":"Cell",
+      "glyph":"Glyph",
+      "shape":"Sphere",
+      "scaling_attribute":"diameter_"
+    }
+  ],
+  "extracellular_substances": [
+
+  ]
+}

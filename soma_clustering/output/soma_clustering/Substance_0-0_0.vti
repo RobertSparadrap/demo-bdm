@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<VTKFile type="ImageData" version="0.1" byte_order="LittleEndian" header_type="UInt32" compressor="vtkZLibDataCompressor">
+  <ImageData WholeExtent="0 19 0 19 0 19" Origin="0 0 0" Spacing="13.157894736842104 13.157894736842104 13.157894736842104" Direction="1 0 0 0 1 0 0 0 1">
+    <Piece Extent="0 19 0 19 0 19"                                                    >
+      <PointData>
+        <DataArray type="Float64" Name="Substance Concentration" format="appended" RangeMin="0"                    RangeMax="0"                    offset="0"                   />
+        <DataArray type="Float64" Name="Diffusion Gradient" NumberOfComponents="3" format="appended" RangeMin="0"                    RangeMax="0"                    offset="168"                 />
+      </PointData>
+      <CellData>
+      </CellData>
+    </Piece>
+  </ImageData>
+  <AppendedData encoding="base64">
+   _AgAAAACAAAAAegAANAAAADUAAAA=eJztwQEBAAAAgJD+r+4ICgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYgAAAAXic7cExAQAAAMKg9U/tawigAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeAN6AAABBgAAAACAAAAAbgAANAAAADQAAAA0AAAANAAAADQAAAAyAAAAeJztwQEBAAAAgJD+r+4ICgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYgAAAAXic7cEBAQAAAICQ/q/uCAoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGIAAAAF4nO3BAQEAAACAkP6v7ggKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABiAAAABeJztwQEBAAAAgJD+r+4ICgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYgAAAAXic7cEBAQAAAICQ/q/uCAoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGIAAAAF4nO3BgQAAAADDoPlTX+EAVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPAYbgAAAQ==
+  </AppendedData>
+</VTKFile>

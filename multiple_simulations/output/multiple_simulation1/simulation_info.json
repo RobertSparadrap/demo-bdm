@@ -1,0 +1,17 @@
+{
+  "simulation": {
+    "name":"multiple_simulation1",
+    "result_dir":"output/multiple_simulation1"
+  },
+  "sim_objects": [
+    {
+      "name":"Cell",
+      "glyph":"Glyph",
+      "shape":"Sphere",
+      "scaling_attribute":"diameter_"
+    }
+  ],
+  "extracellular_substances": [
+
+  ]
+}
