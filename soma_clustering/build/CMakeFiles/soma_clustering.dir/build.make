@@ -78,11 +78,10 @@ include CMakeFiles/soma_clustering.dir/flags.make
 
 soma_clustering_dict.cc: ../src/my_cell.h
 soma_clustering_dict.cc: ../src/soma_clustering.h
-soma_clustering_dict.cc: ../src/soma_clustering_biology_modules.h
 soma_clustering_dict.cc: ../src/validation_criterion.h
 soma_clustering_dict.cc: /home/bdm/biodynamo/build/share/cmake/selection.xml
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bdm/demo/soma_clustering/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating soma_clustering_dict.cc, soma_clustering_dict_rdict.pcm"
-	/home/bdm/biodynamo/build/third_party/root/bin/genreflex /home/bdm/demo/soma_clustering/src/my_cell.h /home/bdm/demo/soma_clustering/src/soma_clustering.h /home/bdm/demo/soma_clustering/src/soma_clustering_biology_modules.h /home/bdm/demo/soma_clustering/src/validation_criterion.h -o /home/bdm/demo/soma_clustering/build/soma_clustering_dict.cc --select=/home/bdm/biodynamo/build/share/cmake/selection.xml -I/usr/include -I/home/bdm/biodynamo/build/third_party/root/include -I/home/bdm/demo/soma_clustering/build/omp -I/home/bdm/biodynamo/build/include -I/home/bdm/demo/soma_clustering/src -DBDMSYS="/home/bdm/biodynamo/build" -DUSE_NUMA -DUSE_DICT
+	/home/bdm/biodynamo/build/third_party/root/bin/genreflex /home/bdm/demo/soma_clustering/src/my_cell.h /home/bdm/demo/soma_clustering/src/soma_clustering.h /home/bdm/demo/soma_clustering/src/validation_criterion.h -o /home/bdm/demo/soma_clustering/build/soma_clustering_dict.cc --select=/home/bdm/biodynamo/build/share/cmake/selection.xml -I/usr/include -I/home/bdm/biodynamo/build/third_party/root/include -I/home/bdm/demo/soma_clustering/build/omp -I/home/bdm/biodynamo/build/include -I/home/bdm/demo/soma_clustering/src -DBDMSYS="/home/bdm/biodynamo/build" -DUSE_NUMA -DUSE_DICT
 
 soma_clustering_dict_rdict.pcm: soma_clustering_dict.cc
 	@$(CMAKE_COMMAND) -E touch_nocreate soma_clustering_dict_rdict.pcm
@@ -124,6 +123,7 @@ soma_clustering_EXTERNAL_OBJECTS =
 soma_clustering: CMakeFiles/soma_clustering.dir/src/soma_clustering.cc.o
 soma_clustering: CMakeFiles/soma_clustering.dir/soma_clustering_dict.cc.o
 soma_clustering: CMakeFiles/soma_clustering.dir/build.make
+soma_clustering: /usr/lib/x86_64-linux-gnu/libnuma.so
 soma_clustering: /home/bdm/biodynamo/build/third_party/root/lib/libCore.so
 soma_clustering: /home/bdm/biodynamo/build/third_party/root/lib/libRIO.so
 soma_clustering: /home/bdm/biodynamo/build/third_party/root/lib/libNet.so

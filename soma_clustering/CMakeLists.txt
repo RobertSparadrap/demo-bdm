@@ -17,14 +17,14 @@ cmake_minimum_required(VERSION 3.2.0)
 project(soma_clustering)
 
 find_package(BioDynaMo REQUIRED)
-find_package(benchmark)
+find_package(benchmark REQUIRED)
 include(${BDM_USE_FILE})
 include_directories("src")
 
+target_link_libraries(benchmark::benchmark)
+
 file(GLOB_RECURSE HEADERS src/*.h)
 file(GLOB_RECURSE SOURCES src/*.cc)
-
-target_link_libraries(benchmark::benchmark)
 
 bdm_add_executable(soma_clustering
                    HEADERS ${HEADERS}

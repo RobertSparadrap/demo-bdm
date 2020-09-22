@@ -121,6 +121,7 @@ parameters_EXTERNAL_OBJECTS =
 parameters: CMakeFiles/parameters.dir/src/parameters.cc.o
 parameters: CMakeFiles/parameters.dir/parameters_dict.cc.o
 parameters: CMakeFiles/parameters.dir/build.make
+parameters: /usr/lib/x86_64-linux-gnu/libnuma.so
 parameters: /home/bdm/biodynamo/build/third_party/root/lib/libCore.so
 parameters: /home/bdm/biodynamo/build/third_party/root/lib/libRIO.so
 parameters: /home/bdm/biodynamo/build/third_party/root/lib/libNet.so

@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import sys
 
+# To find the number of tests in the Demo
 def nb_data():
     runtime = open("runtime.txt")
     i = 0
@@ -14,6 +15,7 @@ def nb_data():
         i += 1
     return i - 2
 
+# To take all the data of the Demo
 def take_data_of_the_demo(runtime, x):
     i = 0
     data_run = [0] * x
@@ -25,6 +27,7 @@ def take_data_of_the_demo(runtime, x):
         i += 1
     return data_run
 
+# Search the Data Demo
 def search_loop(runtime, demo, data):
     while 1:
         if data == demo+'\n':
@@ -33,6 +36,7 @@ def search_loop(runtime, demo, data):
         data = runtime.readline()
     return data
 
+# Take the Data Demo
 def take_demo_time(i, x):
     demo = sys.argv[1]
     runtime = open("runtime.txt")
@@ -45,6 +49,7 @@ def take_demo_time(i, x):
     runtime.close()
     return data_run
 
+# Take the CPU in the Data Demo
 def take_data_CPU(data_run, x):
     data_CPU = [0] * x
     i = 0
@@ -54,6 +59,7 @@ def take_data_CPU(data_run, x):
         i += 1
     return data_CPU
 
+# How many times we used the script "my_bensh.sh"
 def nb_runtimes():
     try:
         demo = sys.argv[1]

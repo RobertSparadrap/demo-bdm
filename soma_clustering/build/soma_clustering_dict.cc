@@ -40,7 +40,6 @@ namespace std {} using namespace std;
 // Header files passed as explicit arguments
 #include "/home/bdm/demo/soma_clustering/src/my_cell.h"
 #include "/home/bdm/demo/soma_clustering/src/soma_clustering.h"
-#include "/home/bdm/demo/soma_clustering/src/soma_clustering_biology_modules.h"
 #include "/home/bdm/demo/soma_clustering/src/validation_criterion.h"
 
 // Header files passed via #pragma extra_include
@@ -55,7 +54,7 @@ namespace bdm {
       inline ::ROOT::TGenericClassInfo *GenerateInitInstance()
       {
          static ::ROOT::TGenericClassInfo 
-            instance("bdm::detail", 0 /*version*/, "core/util/string.h", 23,
+            instance("bdm::detail", 0 /*version*/, "core/util/string.h", 34,
                      ::ROOT::Internal::DefineBehavior((void*)0,(void*)0),
                      &bdmcLcLdetail_Dictionary, 0);
          return &instance;
@@ -178,7 +177,7 @@ namespace ROOT {
       ::bdm::Log *ptr = 0;
       static ::TVirtualIsAProxy* isa_proxy = new ::TIsAProxy(typeid(::bdm::Log));
       static ::ROOT::TGenericClassInfo 
-         instance("bdm::Log", "core/util/log.h", 31,
+         instance("bdm::Log", "core/util/log.h", 32,
                   typeid(::bdm::Log), ::ROOT::Internal::DefineBehavior(ptr, ptr),
                   &bdmcLcLLog_Dictionary, isa_proxy, 4,
                   sizeof(::bdm::Log) );
@@ -377,49 +376,6 @@ namespace ROOT {
 } // end of namespace ROOT
 
 namespace ROOT {
-   static TClass *bdmcLcLFunctorlEvoidcObdmcLcLSimObjectmUgR_Dictionary();
-   static void bdmcLcLFunctorlEvoidcObdmcLcLSimObjectmUgR_TClassManip(TClass*);
-   static void delete_bdmcLcLFunctorlEvoidcObdmcLcLSimObjectmUgR(void *p);
-   static void deleteArray_bdmcLcLFunctorlEvoidcObdmcLcLSimObjectmUgR(void *p);
-   static void destruct_bdmcLcLFunctorlEvoidcObdmcLcLSimObjectmUgR(void *p);
-
-   // Function generating the singleton type initializer
-   static TGenericClassInfo *GenerateInitInstanceLocal(const ::bdm::Functor<void,bdm::SimObject*>*)
-   {
-      ::bdm::Functor<void,bdm::SimObject*> *ptr = 0;
-      static ::TVirtualIsAProxy* isa_proxy = new ::TIsAProxy(typeid(::bdm::Functor<void,bdm::SimObject*>));
-      static ::ROOT::TGenericClassInfo 
-         instance("bdm::Functor<void,bdm::SimObject*>", "core/functor.h", 21,
-                  typeid(::bdm::Functor<void,bdm::SimObject*>), ::ROOT::Internal::DefineBehavior(ptr, ptr),
-                  &bdmcLcLFunctorlEvoidcObdmcLcLSimObjectmUgR_Dictionary, isa_proxy, 4,
-                  sizeof(::bdm::Functor<void,bdm::SimObject*>) );
-      instance.SetDelete(&delete_bdmcLcLFunctorlEvoidcObdmcLcLSimObjectmUgR);
-      instance.SetDeleteArray(&deleteArray_bdmcLcLFunctorlEvoidcObdmcLcLSimObjectmUgR);
-      instance.SetDestructor(&destruct_bdmcLcLFunctorlEvoidcObdmcLcLSimObjectmUgR);
-
-      ::ROOT::AddClassAlternate("bdm::Functor<void,bdm::SimObject*>","bdm::Functor<void, bdm::SimObject*>");
-      return &instance;
-   }
-   TGenericClassInfo *GenerateInitInstance(const ::bdm::Functor<void,bdm::SimObject*>*)
-   {
-      return GenerateInitInstanceLocal((::bdm::Functor<void,bdm::SimObject*>*)0);
-   }
-   // Static variable to force the class initialization
-   static ::ROOT::TGenericClassInfo *_R__UNIQUE_DICT_(Init) = GenerateInitInstanceLocal((const ::bdm::Functor<void,bdm::SimObject*>*)0x0); R__UseDummy(_R__UNIQUE_DICT_(Init));
-
-   // Dictionary for non-ClassDef classes
-   static TClass *bdmcLcLFunctorlEvoidcObdmcLcLSimObjectmUgR_Dictionary() {
-      TClass* theClass =::ROOT::GenerateInitInstanceLocal((const ::bdm::Functor<void,bdm::SimObject*>*)0x0)->GetClass();
-      bdmcLcLFunctorlEvoidcObdmcLcLSimObjectmUgR_TClassManip(theClass);
-   return theClass;
-   }
-
-   static void bdmcLcLFunctorlEvoidcObdmcLcLSimObjectmUgR_TClassManip(TClass* ){
-   }
-
-} // end of namespace ROOT
-
-namespace ROOT {
    static TClass *bdmcLcLFunctorlEvoidcOconstsPbdmcLcLSimObjectmUcOdoublegR_Dictionary();
    static void bdmcLcLFunctorlEvoidcOconstsPbdmcLcLSimObjectmUcOdoublegR_TClassManip(TClass*);
    static void delete_bdmcLcLFunctorlEvoidcOconstsPbdmcLcLSimObjectmUcOdoublegR(void *p);
@@ -501,6 +457,88 @@ namespace ROOT {
    }
 
    static void bdmcLcLFunctorlEvoidcObdmcLcLSimObjectmUcObdmcLcLSoHandlegR_TClassManip(TClass* ){
+   }
+
+} // end of namespace ROOT
+
+namespace ROOT {
+   static TClass *bdmcLcLSimObjectOperationImpl_Dictionary();
+   static void bdmcLcLSimObjectOperationImpl_TClassManip(TClass*);
+   static void delete_bdmcLcLSimObjectOperationImpl(void *p);
+   static void deleteArray_bdmcLcLSimObjectOperationImpl(void *p);
+   static void destruct_bdmcLcLSimObjectOperationImpl(void *p);
+
+   // Function generating the singleton type initializer
+   static TGenericClassInfo *GenerateInitInstanceLocal(const ::bdm::SimObjectOperationImpl*)
+   {
+      ::bdm::SimObjectOperationImpl *ptr = 0;
+      static ::TVirtualIsAProxy* isa_proxy = new ::TIsAProxy(typeid(::bdm::SimObjectOperationImpl));
+      static ::ROOT::TGenericClassInfo 
+         instance("bdm::SimObjectOperationImpl", "core/operation/operation.h", 73,
+                  typeid(::bdm::SimObjectOperationImpl), ::ROOT::Internal::DefineBehavior(ptr, ptr),
+                  &bdmcLcLSimObjectOperationImpl_Dictionary, isa_proxy, 4,
+                  sizeof(::bdm::SimObjectOperationImpl) );
+      instance.SetDelete(&delete_bdmcLcLSimObjectOperationImpl);
+      instance.SetDeleteArray(&deleteArray_bdmcLcLSimObjectOperationImpl);
+      instance.SetDestructor(&destruct_bdmcLcLSimObjectOperationImpl);
+      return &instance;
+   }
+   TGenericClassInfo *GenerateInitInstance(const ::bdm::SimObjectOperationImpl*)
+   {
+      return GenerateInitInstanceLocal((::bdm::SimObjectOperationImpl*)0);
+   }
+   // Static variable to force the class initialization
+   static ::ROOT::TGenericClassInfo *_R__UNIQUE_DICT_(Init) = GenerateInitInstanceLocal((const ::bdm::SimObjectOperationImpl*)0x0); R__UseDummy(_R__UNIQUE_DICT_(Init));
+
+   // Dictionary for non-ClassDef classes
+   static TClass *bdmcLcLSimObjectOperationImpl_Dictionary() {
+      TClass* theClass =::ROOT::GenerateInitInstanceLocal((const ::bdm::SimObjectOperationImpl*)0x0)->GetClass();
+      bdmcLcLSimObjectOperationImpl_TClassManip(theClass);
+   return theClass;
+   }
+
+   static void bdmcLcLSimObjectOperationImpl_TClassManip(TClass* ){
+   }
+
+} // end of namespace ROOT
+
+namespace ROOT {
+   static TClass *bdmcLcLStandaloneOperationImpl_Dictionary();
+   static void bdmcLcLStandaloneOperationImpl_TClassManip(TClass*);
+   static void delete_bdmcLcLStandaloneOperationImpl(void *p);
+   static void deleteArray_bdmcLcLStandaloneOperationImpl(void *p);
+   static void destruct_bdmcLcLStandaloneOperationImpl(void *p);
+
+   // Function generating the singleton type initializer
+   static TGenericClassInfo *GenerateInitInstanceLocal(const ::bdm::StandaloneOperationImpl*)
+   {
+      ::bdm::StandaloneOperationImpl *ptr = 0;
+      static ::TVirtualIsAProxy* isa_proxy = new ::TIsAProxy(typeid(::bdm::StandaloneOperationImpl));
+      static ::ROOT::TGenericClassInfo 
+         instance("bdm::StandaloneOperationImpl", "core/operation/operation.h", 83,
+                  typeid(::bdm::StandaloneOperationImpl), ::ROOT::Internal::DefineBehavior(ptr, ptr),
+                  &bdmcLcLStandaloneOperationImpl_Dictionary, isa_proxy, 4,
+                  sizeof(::bdm::StandaloneOperationImpl) );
+      instance.SetDelete(&delete_bdmcLcLStandaloneOperationImpl);
+      instance.SetDeleteArray(&deleteArray_bdmcLcLStandaloneOperationImpl);
+      instance.SetDestructor(&destruct_bdmcLcLStandaloneOperationImpl);
+      return &instance;
+   }
+   TGenericClassInfo *GenerateInitInstance(const ::bdm::StandaloneOperationImpl*)
+   {
+      return GenerateInitInstanceLocal((::bdm::StandaloneOperationImpl*)0);
+   }
+   // Static variable to force the class initialization
+   static ::ROOT::TGenericClassInfo *_R__UNIQUE_DICT_(Init) = GenerateInitInstanceLocal((const ::bdm::StandaloneOperationImpl*)0x0); R__UseDummy(_R__UNIQUE_DICT_(Init));
+
+   // Dictionary for non-ClassDef classes
+   static TClass *bdmcLcLStandaloneOperationImpl_Dictionary() {
+      TClass* theClass =::ROOT::GenerateInitInstanceLocal((const ::bdm::StandaloneOperationImpl*)0x0)->GetClass();
+      bdmcLcLStandaloneOperationImpl_TClassManip(theClass);
+   return theClass;
+   }
+
+   static void bdmcLcLStandaloneOperationImpl_TClassManip(TClass* ){
    }
 
 } // end of namespace ROOT
@@ -1318,92 +1356,6 @@ namespace ROOT {
 } // end of namespace ROOT
 
 namespace ROOT {
-   static TClass *bdmcLcLCellDivisionEvent_Dictionary();
-   static void bdmcLcLCellDivisionEvent_TClassManip(TClass*);
-   static void delete_bdmcLcLCellDivisionEvent(void *p);
-   static void deleteArray_bdmcLcLCellDivisionEvent(void *p);
-   static void destruct_bdmcLcLCellDivisionEvent(void *p);
-
-   // Function generating the singleton type initializer
-   static TGenericClassInfo *GenerateInitInstanceLocal(const ::bdm::CellDivisionEvent*)
-   {
-      ::bdm::CellDivisionEvent *ptr = 0;
-      static ::TVirtualIsAProxy* isa_proxy = new ::TIsAProxy(typeid(::bdm::CellDivisionEvent));
-      static ::ROOT::TGenericClassInfo 
-         instance("bdm::CellDivisionEvent", "core/event/cell_division_event.h", 30,
-                  typeid(::bdm::CellDivisionEvent), ::ROOT::Internal::DefineBehavior(ptr, ptr),
-                  &bdmcLcLCellDivisionEvent_Dictionary, isa_proxy, 4,
-                  sizeof(::bdm::CellDivisionEvent) );
-      instance.SetDelete(&delete_bdmcLcLCellDivisionEvent);
-      instance.SetDeleteArray(&deleteArray_bdmcLcLCellDivisionEvent);
-      instance.SetDestructor(&destruct_bdmcLcLCellDivisionEvent);
-      return &instance;
-   }
-   TGenericClassInfo *GenerateInitInstance(const ::bdm::CellDivisionEvent*)
-   {
-      return GenerateInitInstanceLocal((::bdm::CellDivisionEvent*)0);
-   }
-   // Static variable to force the class initialization
-   static ::ROOT::TGenericClassInfo *_R__UNIQUE_DICT_(Init) = GenerateInitInstanceLocal((const ::bdm::CellDivisionEvent*)0x0); R__UseDummy(_R__UNIQUE_DICT_(Init));
-
-   // Dictionary for non-ClassDef classes
-   static TClass *bdmcLcLCellDivisionEvent_Dictionary() {
-      TClass* theClass =::ROOT::GenerateInitInstanceLocal((const ::bdm::CellDivisionEvent*)0x0)->GetClass();
-      bdmcLcLCellDivisionEvent_TClassManip(theClass);
-   return theClass;
-   }
-
-   static void bdmcLcLCellDivisionEvent_TClassManip(TClass* ){
-   }
-
-} // end of namespace ROOT
-
-namespace ROOT {
-   static TClass *bdmcLcLDefaultForce_Dictionary();
-   static void bdmcLcLDefaultForce_TClassManip(TClass*);
-   static void *new_bdmcLcLDefaultForce(void *p = 0);
-   static void *newArray_bdmcLcLDefaultForce(Long_t size, void *p);
-   static void delete_bdmcLcLDefaultForce(void *p);
-   static void deleteArray_bdmcLcLDefaultForce(void *p);
-   static void destruct_bdmcLcLDefaultForce(void *p);
-
-   // Function generating the singleton type initializer
-   static TGenericClassInfo *GenerateInitInstanceLocal(const ::bdm::DefaultForce*)
-   {
-      ::bdm::DefaultForce *ptr = 0;
-      static ::TVirtualIsAProxy* isa_proxy = new ::TIsAProxy(typeid(::bdm::DefaultForce));
-      static ::ROOT::TGenericClassInfo 
-         instance("bdm::DefaultForce", "core/default_force.h", 26,
-                  typeid(::bdm::DefaultForce), ::ROOT::Internal::DefineBehavior(ptr, ptr),
-                  &bdmcLcLDefaultForce_Dictionary, isa_proxy, 4,
-                  sizeof(::bdm::DefaultForce) );
-      instance.SetNew(&new_bdmcLcLDefaultForce);
-      instance.SetNewArray(&newArray_bdmcLcLDefaultForce);
-      instance.SetDelete(&delete_bdmcLcLDefaultForce);
-      instance.SetDeleteArray(&deleteArray_bdmcLcLDefaultForce);
-      instance.SetDestructor(&destruct_bdmcLcLDefaultForce);
-      return &instance;
-   }
-   TGenericClassInfo *GenerateInitInstance(const ::bdm::DefaultForce*)
-   {
-      return GenerateInitInstanceLocal((::bdm::DefaultForce*)0);
-   }
-   // Static variable to force the class initialization
-   static ::ROOT::TGenericClassInfo *_R__UNIQUE_DICT_(Init) = GenerateInitInstanceLocal((const ::bdm::DefaultForce*)0x0); R__UseDummy(_R__UNIQUE_DICT_(Init));
-
-   // Dictionary for non-ClassDef classes
-   static TClass *bdmcLcLDefaultForce_Dictionary() {
-      TClass* theClass =::ROOT::GenerateInitInstanceLocal((const ::bdm::DefaultForce*)0x0)->GetClass();
-      bdmcLcLDefaultForce_TClassManip(theClass);
-   return theClass;
-   }
-
-   static void bdmcLcLDefaultForce_TClassManip(TClass* ){
-   }
-
-} // end of namespace ROOT
-
-namespace ROOT {
    static TClass *bdmcLcLModuleParamUidGenerator_Dictionary();
    static void bdmcLcLModuleParamUidGenerator_TClassManip(TClass*);
    static void delete_bdmcLcLModuleParamUidGenerator(void *p);
@@ -1416,7 +1368,7 @@ namespace ROOT {
       ::bdm::ModuleParamUidGenerator *ptr = 0;
       static ::TVirtualIsAProxy* isa_proxy = new ::TIsAProxy(typeid(::bdm::ModuleParamUidGenerator));
       static ::ROOT::TGenericClassInfo 
-         instance("bdm::ModuleParamUidGenerator", "core/param/module_param.h", 29,
+         instance("bdm::ModuleParamUidGenerator", "core/param/module_param.h", 30,
                   typeid(::bdm::ModuleParamUidGenerator), ::ROOT::Internal::DefineBehavior(ptr, ptr),
                   &bdmcLcLModuleParamUidGenerator_Dictionary, isa_proxy, 4,
                   sizeof(::bdm::ModuleParamUidGenerator) );
@@ -1459,7 +1411,7 @@ namespace ROOT {
       ::bdm::Param::VisualizeDiffusion *ptr = 0;
       static ::TVirtualIsAProxy* isa_proxy = new ::TIsAProxy(typeid(::bdm::Param::VisualizeDiffusion));
       static ::ROOT::TGenericClassInfo 
-         instance("bdm::Param::VisualizeDiffusion", "core/param/param.h", 276,
+         instance("bdm::Param::VisualizeDiffusion", "core/param/param.h", 304,
                   typeid(::bdm::Param::VisualizeDiffusion), ::ROOT::Internal::DefineBehavior(ptr, ptr),
                   &bdmcLcLParamcLcLVisualizeDiffusion_Dictionary, isa_proxy, 4,
                   sizeof(::bdm::Param::VisualizeDiffusion) );
@@ -1535,6 +1487,92 @@ namespace ROOT {
 } // end of namespace ROOT
 
 namespace ROOT {
+   static TClass *bdmcLcLDefaultForce_Dictionary();
+   static void bdmcLcLDefaultForce_TClassManip(TClass*);
+   static void *new_bdmcLcLDefaultForce(void *p = 0);
+   static void *newArray_bdmcLcLDefaultForce(Long_t size, void *p);
+   static void delete_bdmcLcLDefaultForce(void *p);
+   static void deleteArray_bdmcLcLDefaultForce(void *p);
+   static void destruct_bdmcLcLDefaultForce(void *p);
+
+   // Function generating the singleton type initializer
+   static TGenericClassInfo *GenerateInitInstanceLocal(const ::bdm::DefaultForce*)
+   {
+      ::bdm::DefaultForce *ptr = 0;
+      static ::TVirtualIsAProxy* isa_proxy = new ::TIsAProxy(typeid(::bdm::DefaultForce));
+      static ::ROOT::TGenericClassInfo 
+         instance("bdm::DefaultForce", "core/default_force.h", 26,
+                  typeid(::bdm::DefaultForce), ::ROOT::Internal::DefineBehavior(ptr, ptr),
+                  &bdmcLcLDefaultForce_Dictionary, isa_proxy, 4,
+                  sizeof(::bdm::DefaultForce) );
+      instance.SetNew(&new_bdmcLcLDefaultForce);
+      instance.SetNewArray(&newArray_bdmcLcLDefaultForce);
+      instance.SetDelete(&delete_bdmcLcLDefaultForce);
+      instance.SetDeleteArray(&deleteArray_bdmcLcLDefaultForce);
+      instance.SetDestructor(&destruct_bdmcLcLDefaultForce);
+      return &instance;
+   }
+   TGenericClassInfo *GenerateInitInstance(const ::bdm::DefaultForce*)
+   {
+      return GenerateInitInstanceLocal((::bdm::DefaultForce*)0);
+   }
+   // Static variable to force the class initialization
+   static ::ROOT::TGenericClassInfo *_R__UNIQUE_DICT_(Init) = GenerateInitInstanceLocal((const ::bdm::DefaultForce*)0x0); R__UseDummy(_R__UNIQUE_DICT_(Init));
+
+   // Dictionary for non-ClassDef classes
+   static TClass *bdmcLcLDefaultForce_Dictionary() {
+      TClass* theClass =::ROOT::GenerateInitInstanceLocal((const ::bdm::DefaultForce*)0x0)->GetClass();
+      bdmcLcLDefaultForce_TClassManip(theClass);
+   return theClass;
+   }
+
+   static void bdmcLcLDefaultForce_TClassManip(TClass* ){
+   }
+
+} // end of namespace ROOT
+
+namespace ROOT {
+   static TClass *bdmcLcLCellDivisionEvent_Dictionary();
+   static void bdmcLcLCellDivisionEvent_TClassManip(TClass*);
+   static void delete_bdmcLcLCellDivisionEvent(void *p);
+   static void deleteArray_bdmcLcLCellDivisionEvent(void *p);
+   static void destruct_bdmcLcLCellDivisionEvent(void *p);
+
+   // Function generating the singleton type initializer
+   static TGenericClassInfo *GenerateInitInstanceLocal(const ::bdm::CellDivisionEvent*)
+   {
+      ::bdm::CellDivisionEvent *ptr = 0;
+      static ::TVirtualIsAProxy* isa_proxy = new ::TIsAProxy(typeid(::bdm::CellDivisionEvent));
+      static ::ROOT::TGenericClassInfo 
+         instance("bdm::CellDivisionEvent", "core/event/cell_division_event.h", 30,
+                  typeid(::bdm::CellDivisionEvent), ::ROOT::Internal::DefineBehavior(ptr, ptr),
+                  &bdmcLcLCellDivisionEvent_Dictionary, isa_proxy, 4,
+                  sizeof(::bdm::CellDivisionEvent) );
+      instance.SetDelete(&delete_bdmcLcLCellDivisionEvent);
+      instance.SetDeleteArray(&deleteArray_bdmcLcLCellDivisionEvent);
+      instance.SetDestructor(&destruct_bdmcLcLCellDivisionEvent);
+      return &instance;
+   }
+   TGenericClassInfo *GenerateInitInstance(const ::bdm::CellDivisionEvent*)
+   {
+      return GenerateInitInstanceLocal((::bdm::CellDivisionEvent*)0);
+   }
+   // Static variable to force the class initialization
+   static ::ROOT::TGenericClassInfo *_R__UNIQUE_DICT_(Init) = GenerateInitInstanceLocal((const ::bdm::CellDivisionEvent*)0x0); R__UseDummy(_R__UNIQUE_DICT_(Init));
+
+   // Dictionary for non-ClassDef classes
+   static TClass *bdmcLcLCellDivisionEvent_Dictionary() {
+      TClass* theClass =::ROOT::GenerateInitInstanceLocal((const ::bdm::CellDivisionEvent*)0x0)->GetClass();
+      bdmcLcLCellDivisionEvent_TClassManip(theClass);
+   return theClass;
+   }
+
+   static void bdmcLcLCellDivisionEvent_TClassManip(TClass* ){
+   }
+
+} // end of namespace ROOT
+
+namespace ROOT {
    static TClass *bdmcLcLCellcLcLDisplacementFunctor_Dictionary();
    static void bdmcLcLCellcLcLDisplacementFunctor_TClassManip(TClass*);
    static void delete_bdmcLcLCellcLcLDisplacementFunctor(void *p);
@@ -1576,6 +1614,51 @@ namespace ROOT {
 } // end of namespace ROOT
 
 namespace ROOT {
+   static TClass *bdmcLcLTimingAggregator_Dictionary();
+   static void bdmcLcLTimingAggregator_TClassManip(TClass*);
+   static void *new_bdmcLcLTimingAggregator(void *p = 0);
+   static void *newArray_bdmcLcLTimingAggregator(Long_t size, void *p);
+   static void delete_bdmcLcLTimingAggregator(void *p);
+   static void deleteArray_bdmcLcLTimingAggregator(void *p);
+   static void destruct_bdmcLcLTimingAggregator(void *p);
+
+   // Function generating the singleton type initializer
+   static TGenericClassInfo *GenerateInitInstanceLocal(const ::bdm::TimingAggregator*)
+   {
+      ::bdm::TimingAggregator *ptr = 0;
+      static ::TVirtualIsAProxy* isa_proxy = new ::TIsAProxy(typeid(::bdm::TimingAggregator));
+      static ::ROOT::TGenericClassInfo 
+         instance("bdm::TimingAggregator", "core/util/timing_aggregator.h", 30,
+                  typeid(::bdm::TimingAggregator), ::ROOT::Internal::DefineBehavior(ptr, ptr),
+                  &bdmcLcLTimingAggregator_Dictionary, isa_proxy, 4,
+                  sizeof(::bdm::TimingAggregator) );
+      instance.SetNew(&new_bdmcLcLTimingAggregator);
+      instance.SetNewArray(&newArray_bdmcLcLTimingAggregator);
+      instance.SetDelete(&delete_bdmcLcLTimingAggregator);
+      instance.SetDeleteArray(&deleteArray_bdmcLcLTimingAggregator);
+      instance.SetDestructor(&destruct_bdmcLcLTimingAggregator);
+      return &instance;
+   }
+   TGenericClassInfo *GenerateInitInstance(const ::bdm::TimingAggregator*)
+   {
+      return GenerateInitInstanceLocal((::bdm::TimingAggregator*)0);
+   }
+   // Static variable to force the class initialization
+   static ::ROOT::TGenericClassInfo *_R__UNIQUE_DICT_(Init) = GenerateInitInstanceLocal((const ::bdm::TimingAggregator*)0x0); R__UseDummy(_R__UNIQUE_DICT_(Init));
+
+   // Dictionary for non-ClassDef classes
+   static TClass *bdmcLcLTimingAggregator_Dictionary() {
+      TClass* theClass =::ROOT::GenerateInitInstanceLocal((const ::bdm::TimingAggregator*)0x0)->GetClass();
+      bdmcLcLTimingAggregator_TClassManip(theClass);
+   return theClass;
+   }
+
+   static void bdmcLcLTimingAggregator_TClassManip(TClass* ){
+   }
+
+} // end of namespace ROOT
+
+namespace ROOT {
    static TClass *bdmcLcLScheduler_Dictionary();
    static void bdmcLcLScheduler_TClassManip(TClass*);
    static void *new_bdmcLcLScheduler(void *p = 0);
@@ -1590,7 +1673,7 @@ namespace ROOT {
       ::bdm::Scheduler *ptr = 0;
       static ::TVirtualIsAProxy* isa_proxy = new ::TIsAProxy(typeid(::bdm::Scheduler));
       static ::ROOT::TGenericClassInfo 
-         instance("bdm::Scheduler", "core/scheduler.h", 35,
+         instance("bdm::Scheduler", "core/scheduler.h", 38,
                   typeid(::bdm::Scheduler), ::ROOT::Internal::DefineBehavior(ptr, ptr),
                   &bdmcLcLScheduler_Dictionary, isa_proxy, 4,
                   sizeof(::bdm::Scheduler) );
@@ -1616,47 +1699,6 @@ namespace ROOT {
    }
 
    static void bdmcLcLScheduler_TClassManip(TClass* ){
-   }
-
-} // end of namespace ROOT
-
-namespace ROOT {
-   static TClass *bdmcLcLEnvironment_Dictionary();
-   static void bdmcLcLEnvironment_TClassManip(TClass*);
-   static void delete_bdmcLcLEnvironment(void *p);
-   static void deleteArray_bdmcLcLEnvironment(void *p);
-   static void destruct_bdmcLcLEnvironment(void *p);
-
-   // Function generating the singleton type initializer
-   static TGenericClassInfo *GenerateInitInstanceLocal(const ::bdm::Environment*)
-   {
-      ::bdm::Environment *ptr = 0;
-      static ::TVirtualIsAProxy* isa_proxy = new ::TIsAProxy(typeid(::bdm::Environment));
-      static ::ROOT::TGenericClassInfo 
-         instance("bdm::Environment", "core/environment/environment.h", 25,
-                  typeid(::bdm::Environment), ::ROOT::Internal::DefineBehavior(ptr, ptr),
-                  &bdmcLcLEnvironment_Dictionary, isa_proxy, 4,
-                  sizeof(::bdm::Environment) );
-      instance.SetDelete(&delete_bdmcLcLEnvironment);
-      instance.SetDeleteArray(&deleteArray_bdmcLcLEnvironment);
-      instance.SetDestructor(&destruct_bdmcLcLEnvironment);
-      return &instance;
-   }
-   TGenericClassInfo *GenerateInitInstance(const ::bdm::Environment*)
-   {
-      return GenerateInitInstanceLocal((::bdm::Environment*)0);
-   }
-   // Static variable to force the class initialization
-   static ::ROOT::TGenericClassInfo *_R__UNIQUE_DICT_(Init) = GenerateInitInstanceLocal((const ::bdm::Environment*)0x0); R__UseDummy(_R__UNIQUE_DICT_(Init));
-
-   // Dictionary for non-ClassDef classes
-   static TClass *bdmcLcLEnvironment_Dictionary() {
-      TClass* theClass =::ROOT::GenerateInitInstanceLocal((const ::bdm::Environment*)0x0)->GetClass();
-      bdmcLcLEnvironment_TClassManip(theClass);
-   return theClass;
-   }
-
-   static void bdmcLcLEnvironment_TClassManip(TClass* ){
    }
 
 } // end of namespace ROOT
@@ -1850,7 +1892,7 @@ namespace ROOT {
       ::bdm::CommandLineOptions *ptr = 0;
       static ::TVirtualIsAProxy* isa_proxy = new ::TIsAProxy(typeid(::bdm::CommandLineOptions));
       static ::ROOT::TGenericClassInfo 
-         instance("bdm::CommandLineOptions", "core/param/command_line_options.h", 32,
+         instance("bdm::CommandLineOptions", "core/param/command_line_options.h", 36,
                   typeid(::bdm::CommandLineOptions), ::ROOT::Internal::DefineBehavior(ptr, ptr),
                   &bdmcLcLCommandLineOptions_Dictionary, isa_proxy, 4,
                   sizeof(::bdm::CommandLineOptions) );
@@ -1874,6 +1916,51 @@ namespace ROOT {
    }
 
    static void bdmcLcLCommandLineOptions_TClassManip(TClass* ){
+   }
+
+} // end of namespace ROOT
+
+namespace ROOT {
+   static TClass *bdmcLcLTiming_Dictionary();
+   static void bdmcLcLTiming_TClassManip(TClass*);
+   static void *new_bdmcLcLTiming(void *p = 0);
+   static void *newArray_bdmcLcLTiming(Long_t size, void *p);
+   static void delete_bdmcLcLTiming(void *p);
+   static void deleteArray_bdmcLcLTiming(void *p);
+   static void destruct_bdmcLcLTiming(void *p);
+
+   // Function generating the singleton type initializer
+   static TGenericClassInfo *GenerateInitInstanceLocal(const ::bdm::Timing*)
+   {
+      ::bdm::Timing *ptr = 0;
+      static ::TVirtualIsAProxy* isa_proxy = new ::TIsAProxy(typeid(::bdm::Timing));
+      static ::ROOT::TGenericClassInfo 
+         instance("bdm::Timing", "core/util/timing.h", 28,
+                  typeid(::bdm::Timing), ::ROOT::Internal::DefineBehavior(ptr, ptr),
+                  &bdmcLcLTiming_Dictionary, isa_proxy, 4,
+                  sizeof(::bdm::Timing) );
+      instance.SetNew(&new_bdmcLcLTiming);
+      instance.SetNewArray(&newArray_bdmcLcLTiming);
+      instance.SetDelete(&delete_bdmcLcLTiming);
+      instance.SetDeleteArray(&deleteArray_bdmcLcLTiming);
+      instance.SetDestructor(&destruct_bdmcLcLTiming);
+      return &instance;
+   }
+   TGenericClassInfo *GenerateInitInstance(const ::bdm::Timing*)
+   {
+      return GenerateInitInstanceLocal((::bdm::Timing*)0);
+   }
+   // Static variable to force the class initialization
+   static ::ROOT::TGenericClassInfo *_R__UNIQUE_DICT_(Init) = GenerateInitInstanceLocal((const ::bdm::Timing*)0x0); R__UseDummy(_R__UNIQUE_DICT_(Init));
+
+   // Dictionary for non-ClassDef classes
+   static TClass *bdmcLcLTiming_Dictionary() {
+      TClass* theClass =::ROOT::GenerateInitInstanceLocal((const ::bdm::Timing*)0x0)->GetClass();
+      bdmcLcLTiming_TClassManip(theClass);
+   return theClass;
+   }
+
+   static void bdmcLcLTiming_TClassManip(TClass* ){
    }
 
 } // end of namespace ROOT
@@ -2137,7 +2224,7 @@ namespace ROOT {
       ::bdm::experimental::neuroscience::NeuriteElement::DisplacementFunctor *ptr = 0;
       static ::TVirtualIsAProxy* isa_proxy = new ::TIsAProxy(typeid(::bdm::experimental::neuroscience::NeuriteElement::DisplacementFunctor));
       static ::ROOT::TGenericClassInfo 
-         instance("bdm::experimental::neuroscience::NeuriteElement::DisplacementFunctor", "neuroscience/neurite_element.h", 629,
+         instance("bdm::experimental::neuroscience::NeuriteElement::DisplacementFunctor", "neuroscience/neurite_element.h", 630,
                   typeid(::bdm::experimental::neuroscience::NeuriteElement::DisplacementFunctor), ::ROOT::Internal::DefineBehavior(ptr, ptr),
                   &bdmcLcLexperimentalcLcLneurosciencecLcLNeuriteElementcLcLDisplacementFunctor_Dictionary, isa_proxy, 4,
                   sizeof(::bdm::experimental::neuroscience::NeuriteElement::DisplacementFunctor) );
@@ -2240,70 +2327,6 @@ namespace ROOT {
    static ::ROOT::TGenericClassInfo *_R__UNIQUE_DICT_(Init) = GenerateInitInstanceLocal((const ::bdm::MyCell*)0x0); R__UseDummy(_R__UNIQUE_DICT_(Init));
 } // end of namespace ROOT
 
-namespace ROOT {
-   static void *new_bdmcLcLChemotaxis(void *p = 0);
-   static void *newArray_bdmcLcLChemotaxis(Long_t size, void *p);
-   static void delete_bdmcLcLChemotaxis(void *p);
-   static void deleteArray_bdmcLcLChemotaxis(void *p);
-   static void destruct_bdmcLcLChemotaxis(void *p);
-
-   // Function generating the singleton type initializer
-   static TGenericClassInfo *GenerateInitInstanceLocal(const ::bdm::Chemotaxis*)
-   {
-      ::bdm::Chemotaxis *ptr = 0;
-      static ::TVirtualIsAProxy* isa_proxy = new ::TInstrumentedIsAProxy< ::bdm::Chemotaxis >(0);
-      static ::ROOT::TGenericClassInfo 
-         instance("bdm::Chemotaxis", ::bdm::Chemotaxis::Class_Version(), "soma_clustering_biology_modules.h", 27,
-                  typeid(::bdm::Chemotaxis), ::ROOT::Internal::DefineBehavior(ptr, ptr),
-                  &::bdm::Chemotaxis::Dictionary, isa_proxy, 4,
-                  sizeof(::bdm::Chemotaxis) );
-      instance.SetNew(&new_bdmcLcLChemotaxis);
-      instance.SetNewArray(&newArray_bdmcLcLChemotaxis);
-      instance.SetDelete(&delete_bdmcLcLChemotaxis);
-      instance.SetDeleteArray(&deleteArray_bdmcLcLChemotaxis);
-      instance.SetDestructor(&destruct_bdmcLcLChemotaxis);
-      return &instance;
-   }
-   TGenericClassInfo *GenerateInitInstance(const ::bdm::Chemotaxis*)
-   {
-      return GenerateInitInstanceLocal((::bdm::Chemotaxis*)0);
-   }
-   // Static variable to force the class initialization
-   static ::ROOT::TGenericClassInfo *_R__UNIQUE_DICT_(Init) = GenerateInitInstanceLocal((const ::bdm::Chemotaxis*)0x0); R__UseDummy(_R__UNIQUE_DICT_(Init));
-} // end of namespace ROOT
-
-namespace ROOT {
-   static void *new_bdmcLcLSubstanceSecretion(void *p = 0);
-   static void *newArray_bdmcLcLSubstanceSecretion(Long_t size, void *p);
-   static void delete_bdmcLcLSubstanceSecretion(void *p);
-   static void deleteArray_bdmcLcLSubstanceSecretion(void *p);
-   static void destruct_bdmcLcLSubstanceSecretion(void *p);
-
-   // Function generating the singleton type initializer
-   static TGenericClassInfo *GenerateInitInstanceLocal(const ::bdm::SubstanceSecretion*)
-   {
-      ::bdm::SubstanceSecretion *ptr = 0;
-      static ::TVirtualIsAProxy* isa_proxy = new ::TInstrumentedIsAProxy< ::bdm::SubstanceSecretion >(0);
-      static ::ROOT::TGenericClassInfo 
-         instance("bdm::SubstanceSecretion", ::bdm::SubstanceSecretion::Class_Version(), "soma_clustering_biology_modules.h", 55,
-                  typeid(::bdm::SubstanceSecretion), ::ROOT::Internal::DefineBehavior(ptr, ptr),
-                  &::bdm::SubstanceSecretion::Dictionary, isa_proxy, 4,
-                  sizeof(::bdm::SubstanceSecretion) );
-      instance.SetNew(&new_bdmcLcLSubstanceSecretion);
-      instance.SetNewArray(&newArray_bdmcLcLSubstanceSecretion);
-      instance.SetDelete(&delete_bdmcLcLSubstanceSecretion);
-      instance.SetDeleteArray(&deleteArray_bdmcLcLSubstanceSecretion);
-      instance.SetDestructor(&destruct_bdmcLcLSubstanceSecretion);
-      return &instance;
-   }
-   TGenericClassInfo *GenerateInitInstance(const ::bdm::SubstanceSecretion*)
-   {
-      return GenerateInitInstanceLocal((::bdm::SubstanceSecretion*)0);
-   }
-   // Static variable to force the class initialization
-   static ::ROOT::TGenericClassInfo *_R__UNIQUE_DICT_(Init) = GenerateInitInstanceLocal((const ::bdm::SubstanceSecretion*)0x0); R__UseDummy(_R__UNIQUE_DICT_(Init));
-} // end of namespace ROOT
-
 namespace bdm {
 //______________________________________________________________________________
 atomic_TClass_ptr MyCell::fgIsA(0);  // static to hold class pointer
@@ -2337,80 +2360,6 @@ TClass *MyCell::Dictionary()
 TClass *MyCell::Class()
 {
    if (!fgIsA.load()) { R__LOCKGUARD(gInterpreterMutex); fgIsA = ::ROOT::GenerateInitInstanceLocal((const ::bdm::MyCell*)0x0)->GetClass(); }
-   return fgIsA;
-}
-
-} // namespace bdm
-namespace bdm {
-//______________________________________________________________________________
-atomic_TClass_ptr Chemotaxis::fgIsA(0);  // static to hold class pointer
-
-//______________________________________________________________________________
-const char *Chemotaxis::Class_Name()
-{
-   return "bdm::Chemotaxis";
-}
-
-//______________________________________________________________________________
-const char *Chemotaxis::ImplFileName()
-{
-   return ::ROOT::GenerateInitInstanceLocal((const ::bdm::Chemotaxis*)0x0)->GetImplFileName();
-}
-
-//______________________________________________________________________________
-int Chemotaxis::ImplFileLine()
-{
-   return ::ROOT::GenerateInitInstanceLocal((const ::bdm::Chemotaxis*)0x0)->GetImplFileLine();
-}
-
-//______________________________________________________________________________
-TClass *Chemotaxis::Dictionary()
-{
-   fgIsA = ::ROOT::GenerateInitInstanceLocal((const ::bdm::Chemotaxis*)0x0)->GetClass();
-   return fgIsA;
-}
-
-//______________________________________________________________________________
-TClass *Chemotaxis::Class()
-{
-   if (!fgIsA.load()) { R__LOCKGUARD(gInterpreterMutex); fgIsA = ::ROOT::GenerateInitInstanceLocal((const ::bdm::Chemotaxis*)0x0)->GetClass(); }
-   return fgIsA;
-}
-
-} // namespace bdm
-namespace bdm {
-//______________________________________________________________________________
-atomic_TClass_ptr SubstanceSecretion::fgIsA(0);  // static to hold class pointer
-
-//______________________________________________________________________________
-const char *SubstanceSecretion::Class_Name()
-{
-   return "bdm::SubstanceSecretion";
-}
-
-//______________________________________________________________________________
-const char *SubstanceSecretion::ImplFileName()
-{
-   return ::ROOT::GenerateInitInstanceLocal((const ::bdm::SubstanceSecretion*)0x0)->GetImplFileName();
-}
-
-//______________________________________________________________________________
-int SubstanceSecretion::ImplFileLine()
-{
-   return ::ROOT::GenerateInitInstanceLocal((const ::bdm::SubstanceSecretion*)0x0)->GetImplFileLine();
-}
-
-//______________________________________________________________________________
-TClass *SubstanceSecretion::Dictionary()
-{
-   fgIsA = ::ROOT::GenerateInitInstanceLocal((const ::bdm::SubstanceSecretion*)0x0)->GetClass();
-   return fgIsA;
-}
-
-//______________________________________________________________________________
-TClass *SubstanceSecretion::Class()
-{
-   if (!fgIsA.load()) { R__LOCKGUARD(gInterpreterMutex); fgIsA = ::ROOT::GenerateInitInstanceLocal((const ::bdm::SubstanceSecretion*)0x0)->GetClass(); }
    return fgIsA;
 }
 
@@ -2501,20 +2450,6 @@ namespace ROOT {
 
 namespace ROOT {
    // Wrapper around operator delete
-   static void delete_bdmcLcLFunctorlEvoidcObdmcLcLSimObjectmUgR(void *p) {
-      delete ((::bdm::Functor<void,bdm::SimObject*>*)p);
-   }
-   static void deleteArray_bdmcLcLFunctorlEvoidcObdmcLcLSimObjectmUgR(void *p) {
-      delete [] ((::bdm::Functor<void,bdm::SimObject*>*)p);
-   }
-   static void destruct_bdmcLcLFunctorlEvoidcObdmcLcLSimObjectmUgR(void *p) {
-      typedef ::bdm::Functor<void,bdm::SimObject*> current_t;
-      ((current_t*)p)->~current_t();
-   }
-} // end of namespace ROOT for class ::bdm::Functor<void,bdm::SimObject*>
-
-namespace ROOT {
-   // Wrapper around operator delete
    static void delete_bdmcLcLFunctorlEvoidcOconstsPbdmcLcLSimObjectmUcOdoublegR(void *p) {
       delete ((::bdm::Functor<void,const bdm::SimObject*,double>*)p);
    }
@@ -2540,6 +2475,34 @@ namespace ROOT {
       ((current_t*)p)->~current_t();
    }
 } // end of namespace ROOT for class ::bdm::Functor<void,bdm::SimObject*,bdm::SoHandle>
+
+namespace ROOT {
+   // Wrapper around operator delete
+   static void delete_bdmcLcLSimObjectOperationImpl(void *p) {
+      delete ((::bdm::SimObjectOperationImpl*)p);
+   }
+   static void deleteArray_bdmcLcLSimObjectOperationImpl(void *p) {
+      delete [] ((::bdm::SimObjectOperationImpl*)p);
+   }
+   static void destruct_bdmcLcLSimObjectOperationImpl(void *p) {
+      typedef ::bdm::SimObjectOperationImpl current_t;
+      ((current_t*)p)->~current_t();
+   }
+} // end of namespace ROOT for class ::bdm::SimObjectOperationImpl
+
+namespace ROOT {
+   // Wrapper around operator delete
+   static void delete_bdmcLcLStandaloneOperationImpl(void *p) {
+      delete ((::bdm::StandaloneOperationImpl*)p);
+   }
+   static void deleteArray_bdmcLcLStandaloneOperationImpl(void *p) {
+      delete [] ((::bdm::StandaloneOperationImpl*)p);
+   }
+   static void destruct_bdmcLcLStandaloneOperationImpl(void *p) {
+      typedef ::bdm::StandaloneOperationImpl current_t;
+      ((current_t*)p)->~current_t();
+   }
+} // end of namespace ROOT for class ::bdm::StandaloneOperationImpl
 
 namespace ROOT {
    // Wrappers around operator new
@@ -2907,41 +2870,6 @@ namespace ROOT {
 
 namespace ROOT {
    // Wrapper around operator delete
-   static void delete_bdmcLcLCellDivisionEvent(void *p) {
-      delete ((::bdm::CellDivisionEvent*)p);
-   }
-   static void deleteArray_bdmcLcLCellDivisionEvent(void *p) {
-      delete [] ((::bdm::CellDivisionEvent*)p);
-   }
-   static void destruct_bdmcLcLCellDivisionEvent(void *p) {
-      typedef ::bdm::CellDivisionEvent current_t;
-      ((current_t*)p)->~current_t();
-   }
-} // end of namespace ROOT for class ::bdm::CellDivisionEvent
-
-namespace ROOT {
-   // Wrappers around operator new
-   static void *new_bdmcLcLDefaultForce(void *p) {
-      return  p ? ::new((::ROOT::Internal::TOperatorNewHelper*)p) ::bdm::DefaultForce : new ::bdm::DefaultForce;
-   }
-   static void *newArray_bdmcLcLDefaultForce(Long_t nElements, void *p) {
-      return p ? ::new((::ROOT::Internal::TOperatorNewHelper*)p) ::bdm::DefaultForce[nElements] : new ::bdm::DefaultForce[nElements];
-   }
-   // Wrapper around operator delete
-   static void delete_bdmcLcLDefaultForce(void *p) {
-      delete ((::bdm::DefaultForce*)p);
-   }
-   static void deleteArray_bdmcLcLDefaultForce(void *p) {
-      delete [] ((::bdm::DefaultForce*)p);
-   }
-   static void destruct_bdmcLcLDefaultForce(void *p) {
-      typedef ::bdm::DefaultForce current_t;
-      ((current_t*)p)->~current_t();
-   }
-} // end of namespace ROOT for class ::bdm::DefaultForce
-
-namespace ROOT {
-   // Wrapper around operator delete
    static void delete_bdmcLcLModuleParamUidGenerator(void *p) {
       delete ((::bdm::ModuleParamUidGenerator*)p);
    }
@@ -2997,6 +2925,41 @@ namespace ROOT {
 } // end of namespace ROOT for class ::bdm::Math
 
 namespace ROOT {
+   // Wrappers around operator new
+   static void *new_bdmcLcLDefaultForce(void *p) {
+      return  p ? ::new((::ROOT::Internal::TOperatorNewHelper*)p) ::bdm::DefaultForce : new ::bdm::DefaultForce;
+   }
+   static void *newArray_bdmcLcLDefaultForce(Long_t nElements, void *p) {
+      return p ? ::new((::ROOT::Internal::TOperatorNewHelper*)p) ::bdm::DefaultForce[nElements] : new ::bdm::DefaultForce[nElements];
+   }
+   // Wrapper around operator delete
+   static void delete_bdmcLcLDefaultForce(void *p) {
+      delete ((::bdm::DefaultForce*)p);
+   }
+   static void deleteArray_bdmcLcLDefaultForce(void *p) {
+      delete [] ((::bdm::DefaultForce*)p);
+   }
+   static void destruct_bdmcLcLDefaultForce(void *p) {
+      typedef ::bdm::DefaultForce current_t;
+      ((current_t*)p)->~current_t();
+   }
+} // end of namespace ROOT for class ::bdm::DefaultForce
+
+namespace ROOT {
+   // Wrapper around operator delete
+   static void delete_bdmcLcLCellDivisionEvent(void *p) {
+      delete ((::bdm::CellDivisionEvent*)p);
+   }
+   static void deleteArray_bdmcLcLCellDivisionEvent(void *p) {
+      delete [] ((::bdm::CellDivisionEvent*)p);
+   }
+   static void destruct_bdmcLcLCellDivisionEvent(void *p) {
+      typedef ::bdm::CellDivisionEvent current_t;
+      ((current_t*)p)->~current_t();
+   }
+} // end of namespace ROOT for class ::bdm::CellDivisionEvent
+
+namespace ROOT {
    // Wrapper around operator delete
    static void delete_bdmcLcLCellcLcLDisplacementFunctor(void *p) {
       delete ((::bdm::Cell::DisplacementFunctor*)p);
@@ -3009,6 +2972,27 @@ namespace ROOT {
       ((current_t*)p)->~current_t();
    }
 } // end of namespace ROOT for class ::bdm::Cell::DisplacementFunctor
+
+namespace ROOT {
+   // Wrappers around operator new
+   static void *new_bdmcLcLTimingAggregator(void *p) {
+      return  p ? ::new((::ROOT::Internal::TOperatorNewHelper*)p) ::bdm::TimingAggregator : new ::bdm::TimingAggregator;
+   }
+   static void *newArray_bdmcLcLTimingAggregator(Long_t nElements, void *p) {
+      return p ? ::new((::ROOT::Internal::TOperatorNewHelper*)p) ::bdm::TimingAggregator[nElements] : new ::bdm::TimingAggregator[nElements];
+   }
+   // Wrapper around operator delete
+   static void delete_bdmcLcLTimingAggregator(void *p) {
+      delete ((::bdm::TimingAggregator*)p);
+   }
+   static void deleteArray_bdmcLcLTimingAggregator(void *p) {
+      delete [] ((::bdm::TimingAggregator*)p);
+   }
+   static void destruct_bdmcLcLTimingAggregator(void *p) {
+      typedef ::bdm::TimingAggregator current_t;
+      ((current_t*)p)->~current_t();
+   }
+} // end of namespace ROOT for class ::bdm::TimingAggregator
 
 namespace ROOT {
    // Wrappers around operator new
@@ -3030,20 +3014,6 @@ namespace ROOT {
       ((current_t*)p)->~current_t();
    }
 } // end of namespace ROOT for class ::bdm::Scheduler
-
-namespace ROOT {
-   // Wrapper around operator delete
-   static void delete_bdmcLcLEnvironment(void *p) {
-      delete ((::bdm::Environment*)p);
-   }
-   static void deleteArray_bdmcLcLEnvironment(void *p) {
-      delete [] ((::bdm::Environment*)p);
-   }
-   static void destruct_bdmcLcLEnvironment(void *p) {
-      typedef ::bdm::Environment current_t;
-      ((current_t*)p)->~current_t();
-   }
-} // end of namespace ROOT for class ::bdm::Environment
 
 namespace ROOT {
    // Wrapper around operator delete
@@ -3135,6 +3105,27 @@ namespace ROOT {
       ((current_t*)p)->~current_t();
    }
 } // end of namespace ROOT for class ::bdm::CommandLineOptions
+
+namespace ROOT {
+   // Wrappers around operator new
+   static void *new_bdmcLcLTiming(void *p) {
+      return  p ? ::new((::ROOT::Internal::TOperatorNewHelper*)p) ::bdm::Timing : new ::bdm::Timing;
+   }
+   static void *newArray_bdmcLcLTiming(Long_t nElements, void *p) {
+      return p ? ::new((::ROOT::Internal::TOperatorNewHelper*)p) ::bdm::Timing[nElements] : new ::bdm::Timing[nElements];
+   }
+   // Wrapper around operator delete
+   static void delete_bdmcLcLTiming(void *p) {
+      delete ((::bdm::Timing*)p);
+   }
+   static void deleteArray_bdmcLcLTiming(void *p) {
+      delete [] ((::bdm::Timing*)p);
+   }
+   static void destruct_bdmcLcLTiming(void *p) {
+      typedef ::bdm::Timing current_t;
+      ((current_t*)p)->~current_t();
+   }
+} // end of namespace ROOT for class ::bdm::Timing
 
 namespace ROOT {
    // Wrapper around operator delete
@@ -3286,76 +3277,6 @@ namespace ROOT {
       ((current_t*)p)->~current_t();
    }
 } // end of namespace ROOT for class ::bdm::MyCell
-
-namespace bdm {
-//______________________________________________________________________________
-void Chemotaxis::Streamer(TBuffer &R__b)
-{
-   // Stream an object of class bdm::Chemotaxis.
-
-   if (R__b.IsReading()) {
-      R__b.ReadClassBuffer(bdm::Chemotaxis::Class(),this);
-   } else {
-      R__b.WriteClassBuffer(bdm::Chemotaxis::Class(),this);
-   }
-}
-
-} // namespace bdm
-namespace ROOT {
-   // Wrappers around operator new
-   static void *new_bdmcLcLChemotaxis(void *p) {
-      return  p ? ::new((::ROOT::Internal::TOperatorNewHelper*)p) ::bdm::Chemotaxis : new ::bdm::Chemotaxis;
-   }
-   static void *newArray_bdmcLcLChemotaxis(Long_t nElements, void *p) {
-      return p ? ::new((::ROOT::Internal::TOperatorNewHelper*)p) ::bdm::Chemotaxis[nElements] : new ::bdm::Chemotaxis[nElements];
-   }
-   // Wrapper around operator delete
-   static void delete_bdmcLcLChemotaxis(void *p) {
-      delete ((::bdm::Chemotaxis*)p);
-   }
-   static void deleteArray_bdmcLcLChemotaxis(void *p) {
-      delete [] ((::bdm::Chemotaxis*)p);
-   }
-   static void destruct_bdmcLcLChemotaxis(void *p) {
-      typedef ::bdm::Chemotaxis current_t;
-      ((current_t*)p)->~current_t();
-   }
-} // end of namespace ROOT for class ::bdm::Chemotaxis
-
-namespace bdm {
-//______________________________________________________________________________
-void SubstanceSecretion::Streamer(TBuffer &R__b)
-{
-   // Stream an object of class bdm::SubstanceSecretion.
-
-   if (R__b.IsReading()) {
-      R__b.ReadClassBuffer(bdm::SubstanceSecretion::Class(),this);
-   } else {
-      R__b.WriteClassBuffer(bdm::SubstanceSecretion::Class(),this);
-   }
-}
-
-} // namespace bdm
-namespace ROOT {
-   // Wrappers around operator new
-   static void *new_bdmcLcLSubstanceSecretion(void *p) {
-      return  p ? ::new((::ROOT::Internal::TOperatorNewHelper*)p) ::bdm::SubstanceSecretion : new ::bdm::SubstanceSecretion;
-   }
-   static void *newArray_bdmcLcLSubstanceSecretion(Long_t nElements, void *p) {
-      return p ? ::new((::ROOT::Internal::TOperatorNewHelper*)p) ::bdm::SubstanceSecretion[nElements] : new ::bdm::SubstanceSecretion[nElements];
-   }
-   // Wrapper around operator delete
-   static void delete_bdmcLcLSubstanceSecretion(void *p) {
-      delete ((::bdm::SubstanceSecretion*)p);
-   }
-   static void deleteArray_bdmcLcLSubstanceSecretion(void *p) {
-      delete [] ((::bdm::SubstanceSecretion*)p);
-   }
-   static void destruct_bdmcLcLSubstanceSecretion(void *p) {
-      typedef ::bdm::SubstanceSecretion current_t;
-      ((current_t*)p)->~current_t();
-   }
-} // end of namespace ROOT for class ::bdm::SubstanceSecretion
 
 namespace ROOT {
    static TClass *vectorlEbdmcLcLSpinlockmUgR_Dictionary();
@@ -3878,6 +3799,71 @@ namespace ROOT {
 } // end of namespace ROOT for class vector<bdm::Param::VisualizeDiffusion>
 
 namespace ROOT {
+   static TClass *vectorlEbdmcLcLOperationImplmUgR_Dictionary();
+   static void vectorlEbdmcLcLOperationImplmUgR_TClassManip(TClass*);
+   static void *new_vectorlEbdmcLcLOperationImplmUgR(void *p = 0);
+   static void *newArray_vectorlEbdmcLcLOperationImplmUgR(Long_t size, void *p);
+   static void delete_vectorlEbdmcLcLOperationImplmUgR(void *p);
+   static void deleteArray_vectorlEbdmcLcLOperationImplmUgR(void *p);
+   static void destruct_vectorlEbdmcLcLOperationImplmUgR(void *p);
+
+   // Function generating the singleton type initializer
+   static TGenericClassInfo *GenerateInitInstanceLocal(const vector<bdm::OperationImpl*>*)
+   {
+      vector<bdm::OperationImpl*> *ptr = 0;
+      static ::TVirtualIsAProxy* isa_proxy = new ::TIsAProxy(typeid(vector<bdm::OperationImpl*>));
+      static ::ROOT::TGenericClassInfo 
+         instance("vector<bdm::OperationImpl*>", -2, "vector", 386,
+                  typeid(vector<bdm::OperationImpl*>), ::ROOT::Internal::DefineBehavior(ptr, ptr),
+                  &vectorlEbdmcLcLOperationImplmUgR_Dictionary, isa_proxy, 4,
+                  sizeof(vector<bdm::OperationImpl*>) );
+      instance.SetNew(&new_vectorlEbdmcLcLOperationImplmUgR);
+      instance.SetNewArray(&newArray_vectorlEbdmcLcLOperationImplmUgR);
+      instance.SetDelete(&delete_vectorlEbdmcLcLOperationImplmUgR);
+      instance.SetDeleteArray(&deleteArray_vectorlEbdmcLcLOperationImplmUgR);
+      instance.SetDestructor(&destruct_vectorlEbdmcLcLOperationImplmUgR);
+      instance.AdoptCollectionProxyInfo(TCollectionProxyInfo::Generate(TCollectionProxyInfo::Pushback< vector<bdm::OperationImpl*> >()));
+
+      ::ROOT::AddClassAlternate("vector<bdm::OperationImpl*>","std::vector<bdm::OperationImpl*, std::allocator<bdm::OperationImpl*> >");
+      return &instance;
+   }
+   // Static variable to force the class initialization
+   static ::ROOT::TGenericClassInfo *_R__UNIQUE_DICT_(Init) = GenerateInitInstanceLocal((const vector<bdm::OperationImpl*>*)0x0); R__UseDummy(_R__UNIQUE_DICT_(Init));
+
+   // Dictionary for non-ClassDef classes
+   static TClass *vectorlEbdmcLcLOperationImplmUgR_Dictionary() {
+      TClass* theClass =::ROOT::GenerateInitInstanceLocal((const vector<bdm::OperationImpl*>*)0x0)->GetClass();
+      vectorlEbdmcLcLOperationImplmUgR_TClassManip(theClass);
+   return theClass;
+   }
+
+   static void vectorlEbdmcLcLOperationImplmUgR_TClassManip(TClass* ){
+   }
+
+} // end of namespace ROOT
+
+namespace ROOT {
+   // Wrappers around operator new
+   static void *new_vectorlEbdmcLcLOperationImplmUgR(void *p) {
+      return  p ? ::new((::ROOT::Internal::TOperatorNewHelper*)p) vector<bdm::OperationImpl*> : new vector<bdm::OperationImpl*>;
+   }
+   static void *newArray_vectorlEbdmcLcLOperationImplmUgR(Long_t nElements, void *p) {
+      return p ? ::new((::ROOT::Internal::TOperatorNewHelper*)p) vector<bdm::OperationImpl*>[nElements] : new vector<bdm::OperationImpl*>[nElements];
+   }
+   // Wrapper around operator delete
+   static void delete_vectorlEbdmcLcLOperationImplmUgR(void *p) {
+      delete ((vector<bdm::OperationImpl*>*)p);
+   }
+   static void deleteArray_vectorlEbdmcLcLOperationImplmUgR(void *p) {
+      delete [] ((vector<bdm::OperationImpl*>*)p);
+   }
+   static void destruct_vectorlEbdmcLcLOperationImplmUgR(void *p) {
+      typedef vector<bdm::OperationImpl*> current_t;
+      ((current_t*)p)->~current_t();
+   }
+} // end of namespace ROOT for class vector<bdm::OperationImpl*>
+
+namespace ROOT {
    static TClass *vectorlEbdmcLcLOperationmUgR_Dictionary();
    static void vectorlEbdmcLcLOperationmUgR_TClassManip(TClass*);
    static void *new_vectorlEbdmcLcLOperationmUgR(void *p = 0);
@@ -4227,12 +4213,13 @@ extern int __Cling_AutoLoading_Map;
 namespace bdm{class __attribute__((annotate(R"ATTRDUMP(pattern@@@bdm::*)ATTRDUMP"))) __attribute__((annotate("$clingAutoload$core/util/log.h")))  __attribute__((annotate("$clingAutoload$biodynamo.h")))  Log;}
 namespace bdm{class __attribute__((annotate(R"ATTRDUMP(pattern@@@bdm::*)ATTRDUMP"))) __attribute__((annotate("$clingAutoload$core/event/event.h")))  __attribute__((annotate("$clingAutoload$biodynamo.h")))  UniqueEventIdFactory;}
 namespace bdm{struct __attribute__((annotate(R"ATTRDUMP(pattern@@@bdm::*)ATTRDUMP"))) __attribute__((annotate("$clingAutoload$core/event/event.h")))  __attribute__((annotate("$clingAutoload$biodynamo.h")))  Event;}
+namespace bdm{struct __attribute__((annotate("$clingAutoload$core/operation/operation.h")))  __attribute__((annotate("$clingAutoload$biodynamo.h")))  OperationImpl;}
+namespace std{template <typename _Tp> class __attribute__((annotate("$clingAutoload$bits/allocator.h")))  __attribute__((annotate("$clingAutoload$string")))  allocator;
+}
 namespace bdm{class __attribute__((annotate("$clingAutoload$core/sim_object/sim_object.h")))  __attribute__((annotate("$clingAutoload$biodynamo.h")))  SimObject;}
 namespace std{template <typename _T1, typename _T2> struct __attribute__((annotate("$clingAutoload$bits/stl_pair.h")))  __attribute__((annotate("$clingAutoload$string")))  pair;
 }
 namespace bdm{template <typename TValue> class __attribute__((annotate("$clingAutoload$core/container/so_uid_map.h")))  __attribute__((annotate("$clingAutoload$biodynamo.h")))  SoUidMap;
-}
-namespace std{template <typename _Tp> class __attribute__((annotate("$clingAutoload$bits/allocator.h")))  __attribute__((annotate("$clingAutoload$string")))  allocator;
 }
 namespace bdm{class __attribute__((annotate(R"ATTRDUMP(pattern@@@bdm::*)ATTRDUMP"))) __attribute__((annotate("$clingAutoload$core/execution_context/in_place_exec_ctxt.h")))  __attribute__((annotate("$clingAutoload$biodynamo.h")))  InPlaceExecutionContext;}
 namespace bdm{struct __attribute__((annotate("$clingAutoload$core/operation/operation.h")))  __attribute__((annotate("$clingAutoload$biodynamo.h")))  Operation;}
@@ -4249,6 +4236,8 @@ namespace bdm{template <typename TSimObject> class __attribute__((annotate("$cli
 namespace bdm{class __attribute__((annotate(R"ATTRDUMP(pattern@@@bdm::*)ATTRDUMP"))) __attribute__((annotate("$clingAutoload$core/util/io.h")))  __attribute__((annotate("$clingAutoload$biodynamo.h")))  TFileRaii;}
 namespace bdm{template <typename TReturn, typename ...TParameter> struct __attribute__((annotate("$clingAutoload$core/functor.h")))  __attribute__((annotate("$clingAutoload$biodynamo.h")))  Functor;
 }
+namespace bdm{struct __attribute__((annotate(R"ATTRDUMP(pattern@@@bdm::*)ATTRDUMP"))) __attribute__((annotate("$clingAutoload$core/operation/operation.h")))  __attribute__((annotate("$clingAutoload$biodynamo.h")))  SimObjectOperationImpl;}
+namespace bdm{struct __attribute__((annotate(R"ATTRDUMP(pattern@@@bdm::*)ATTRDUMP"))) __attribute__((annotate("$clingAutoload$core/operation/operation.h")))  __attribute__((annotate("$clingAutoload$biodynamo.h")))  StandaloneOperationImpl;}
 namespace bdm{class __attribute__((annotate(R"ATTRDUMP(pattern@@@bdm::*)ATTRDUMP"))) __attribute__((annotate("$clingAutoload$core/util/thread_info.h")))  __attribute__((annotate("$clingAutoload$biodynamo.h")))  ThreadInfo;}
 namespace bdm{class __attribute__((annotate(R"ATTRDUMP(pattern@@@bdm::*)ATTRDUMP"))) __attribute__((annotate("$clingAutoload$core/gpu/opencl_state.h")))  __attribute__((annotate("$clingAutoload$biodynamo.h")))  OpenCLState;}
 namespace bdm{namespace memory_manager_detail{class __attribute__((annotate("$clingAutoload$core/memory/memory_manager.h")))  __attribute__((annotate("$clingAutoload$biodynamo.h")))  PoolAllocator;}}
@@ -4264,17 +4253,18 @@ namespace std{template <typename _Tp = void> struct __attribute__((annotate("$cl
 }
 namespace bdm{namespace experimental{namespace neuroscience{class __attribute__((annotate(R"ATTRDUMP(pattern@@@bdm::*)ATTRDUMP"))) __attribute__((annotate("$clingAutoload$neuroscience/neuron_or_neurite.h")))  __attribute__((annotate("$clingAutoload$biodynamo.h")))  NeuronOrNeurite;}}}
 namespace bdm{namespace detail{struct __attribute__((annotate(R"ATTRDUMP(pattern@@@bdm::*)ATTRDUMP"))) __attribute__((annotate("$clingAutoload$core/sim_object/so_pointer.h")))  __attribute__((annotate("$clingAutoload$biodynamo.h")))  ExtractUid;}}
-namespace bdm{struct __attribute__((annotate(R"ATTRDUMP(pattern@@@bdm::*)ATTRDUMP"))) __attribute__((annotate("$clingAutoload$core/event/cell_division_event.h")))  __attribute__((annotate("$clingAutoload$biodynamo.h")))  CellDivisionEvent;}
-namespace bdm{class __attribute__((annotate(R"ATTRDUMP(pattern@@@bdm::*)ATTRDUMP"))) __attribute__((annotate("$clingAutoload$core/default_force.h")))  __attribute__((annotate("$clingAutoload$biodynamo.h")))  DefaultForce;}
 namespace bdm{class __attribute__((annotate(R"ATTRDUMP(pattern@@@bdm::*)ATTRDUMP"))) __attribute__((annotate("$clingAutoload$core/param/module_param.h")))  __attribute__((annotate("$clingAutoload$biodynamo.h")))  ModuleParamUidGenerator;}
 namespace bdm{struct __attribute__((annotate(R"ATTRDUMP(pattern@@@bdm::*)ATTRDUMP"))) __attribute__((annotate("$clingAutoload$core/util/math.h")))  __attribute__((annotate("$clingAutoload$biodynamo.h")))  Math;}
+namespace bdm{class __attribute__((annotate(R"ATTRDUMP(pattern@@@bdm::*)ATTRDUMP"))) __attribute__((annotate("$clingAutoload$core/default_force.h")))  __attribute__((annotate("$clingAutoload$biodynamo.h")))  DefaultForce;}
+namespace bdm{struct __attribute__((annotate(R"ATTRDUMP(pattern@@@bdm::*)ATTRDUMP"))) __attribute__((annotate("$clingAutoload$core/event/cell_division_event.h")))  __attribute__((annotate("$clingAutoload$biodynamo.h")))  CellDivisionEvent;}
+namespace bdm{class __attribute__((annotate(R"ATTRDUMP(pattern@@@bdm::*)ATTRDUMP"))) __attribute__((annotate("$clingAutoload$core/util/timing_aggregator.h")))  __attribute__((annotate("$clingAutoload$biodynamo.h")))  TimingAggregator;}
 namespace bdm{class __attribute__((annotate(R"ATTRDUMP(pattern@@@bdm::*)ATTRDUMP"))) __attribute__((annotate("$clingAutoload$core/scheduler.h")))  __attribute__((annotate("$clingAutoload$biodynamo.h")))  Scheduler;}
-namespace bdm{class __attribute__((annotate(R"ATTRDUMP(pattern@@@bdm::*)ATTRDUMP"))) __attribute__((annotate("$clingAutoload$core/environment/environment.h")))  __attribute__((annotate("$clingAutoload$biodynamo.h")))  Environment;}
 namespace std{template <typename _Tp, std::size_t _Nm> struct __attribute__((annotate("$clingAutoload$array")))  __attribute__((annotate("$clingAutoload$biodynamo.h")))  array;
 }
 namespace bdm{struct __attribute__((annotate(R"ATTRDUMP(pattern@@@bdm::*)ATTRDUMP"))) __attribute__((annotate("$clingAutoload$core/model_initializer.h")))  __attribute__((annotate("$clingAutoload$biodynamo.h")))  ModelInitializer;}
 namespace bdm{class __attribute__((annotate(R"ATTRDUMP(pattern@@@bdm::*)ATTRDUMP"))) __attribute__((annotate("$clingAutoload$version.h")))  __attribute__((annotate("$clingAutoload$biodynamo.h")))  Version;}
 namespace bdm{class __attribute__((annotate(R"ATTRDUMP(pattern@@@bdm::*)ATTRDUMP"))) __attribute__((annotate("$clingAutoload$core/param/command_line_options.h")))  __attribute__((annotate("$clingAutoload$biodynamo.h")))  CommandLineOptions;}
+namespace bdm{class __attribute__((annotate(R"ATTRDUMP(pattern@@@bdm::*)ATTRDUMP"))) __attribute__((annotate("$clingAutoload$core/util/timing.h")))  __attribute__((annotate("$clingAutoload$biodynamo.h")))  Timing;}
 namespace bdm{namespace experimental{namespace neuroscience{struct __attribute__((annotate(R"ATTRDUMP(pattern@@@bdm::*)ATTRDUMP"))) __attribute__((annotate("$clingAutoload$neuroscience/event/neurite_bifurcation_event.h")))  __attribute__((annotate("$clingAutoload$biodynamo.h")))  NeuriteBifurcationEvent;}}}
 namespace bdm{namespace experimental{namespace neuroscience{struct __attribute__((annotate(R"ATTRDUMP(pattern@@@bdm::*)ATTRDUMP"))) __attribute__((annotate("$clingAutoload$neuroscience/event/neurite_branching_event.h")))  __attribute__((annotate("$clingAutoload$biodynamo.h")))  NeuriteBranchingEvent;}}}
 namespace bdm{namespace experimental{namespace neuroscience{struct __attribute__((annotate(R"ATTRDUMP(pattern@@@bdm::*)ATTRDUMP"))) __attribute__((annotate("$clingAutoload$neuroscience/event/new_neurite_extension_event.h")))  __attribute__((annotate("$clingAutoload$biodynamo.h")))  NewNeuriteExtensionEvent;}}}
@@ -4282,8 +4272,6 @@ namespace bdm{namespace experimental{namespace neuroscience{struct __attribute__
 namespace bdm{namespace experimental{namespace neuroscience{struct __attribute__((annotate(R"ATTRDUMP(pattern@@@bdm::*)ATTRDUMP"))) __attribute__((annotate("$clingAutoload$neuroscience/event/split_neurite_element_event.h")))  __attribute__((annotate("$clingAutoload$biodynamo.h")))  SplitNeuriteElementEvent;}}}
 namespace bdm{class __attribute__((annotate(R"ATTRDUMP(pattern@@@bdm::*)ATTRDUMP"))) __attribute__((annotate("$clingAutoload$core/visualization/root/adaptor.h")))  __attribute__((annotate("$clingAutoload$biodynamo.h")))  RootAdaptor;}
 namespace bdm{class __attribute__((annotate(R"ATTRDUMP(pattern@@@bdm::*)ATTRDUMP"))) MyCell;}
-namespace bdm{struct __attribute__((annotate(R"ATTRDUMP(pattern@@@bdm::*)ATTRDUMP"))) __attribute__((annotate("$clingAutoload$soma_clustering_biology_modules.h")))  Chemotaxis;}
-namespace bdm{struct __attribute__((annotate(R"ATTRDUMP(pattern@@@bdm::*)ATTRDUMP"))) __attribute__((annotate("$clingAutoload$soma_clustering_biology_modules.h")))  SubstanceSecretion;}
 )DICTFWDDCLS";
     static const char* payloadCode = R"DICTPAYLOAD(
 #line 1 "soma_clustering_dict dictionary payload"
@@ -4328,13 +4316,13 @@ class MyCell : public Cell {
 
  public:
   MyCell() {}
-  explicit MyCell(const Double3& position) : Base(position) {}
+  explicit MyCell(const Double3& position, int cell_type)
+      : Base(position), cell_type_(cell_type) {}
 
   /// Default event constructor
   MyCell(const Event& event, SimObject* other, uint64_t new_oid = 0)
       : Base(event, other, new_oid) {}
 
-  void SetCellType(int t) { cell_type_ = t; }
   int GetCellType() const { return cell_type_; }
 
  private:
@@ -4375,14 +4363,15 @@ class MyCell : public Cell {
 #include "biodynamo.h"
 #include <benchmark/benchmark.h>
 #include "my_cell.h"
-#include "soma_clustering_biology_modules.h"
 #include "validation_criterion.h"
 
 namespace bdm {
 
+enum Substances { kSubstance0, kSubstance1 };
+
 inline int Simulate(int argc, const char** argv) {
   auto set_param = [](Param* param) {
-    // Create an artificial bounds for the simulation space
+    // Create an artificial bound for the simulation space
     param->bound_space_ = true;
     param->min_bound_ = 0;
     param->max_bound_ = 250;
@@ -4390,6 +4379,7 @@ inline int Simulate(int argc, const char** argv) {
   };
 
   Simulation simulation(argc, argv, set_param);
+  auto* rm = simulation.GetResourceManager();
 
   // Define initial model
   auto* param = simulation.GetParam();
@@ -4398,34 +4388,30 @@ inline int Simulate(int argc, const char** argv) {
 #pragma omp parallel
   simulation.GetRandom()->SetSeed(4357);
 
-  // Construct `num_cells`/2 cells of type 1
-  auto construct_0 = [](const Double3& position) {
-    MyCell* cell = new MyCell(position);
-    cell->SetDiameter(10);
-    cell->SetCellType(1);
-    cell->AddBiologyModule(new SubstanceSecretion());
-    cell->AddBiologyModule(new Chemotaxis());
-    return cell;
-  };
-  ModelInitializer::CreateCellsRandom(param->min_bound_, param->max_bound_,
-                                      num_cells / 2, construct_0);
-
-  // Construct `num_cells`/2 cells of type -1
-  auto construct_1 = [](const Double3& position) {
-    MyCell* cell = new MyCell(position);
-    cell->SetDiameter(10);
-    cell->SetCellType(-1);
-    cell->AddBiologyModule(new SubstanceSecretion());
-    cell->AddBiologyModule(new Chemotaxis());
-    return cell;
-  };
-  ModelInitializer::CreateCellsRandom(param->min_bound_, param->max_bound_,
-                                      num_cells / 2, construct_1);
-
   // Define the substances that cells may secrete
   // Order: substance_name, diffusion_coefficient, decay_constant, resolution
   ModelInitializer::DefineSubstance(kSubstance0, "Substance_0", 0.5, 0.1, 20);
   ModelInitializer::DefineSubstance(kSubstance1, "Substance_1", 0.5, 0.1, 20);
+
+  auto* dg = rm->GetDiffusionGrid(kSubstance0);
+  int cell_type = 1;
+
+  auto construct = [&dg, &cell_type](const Double3& position) {
+    auto* cell = new MyCell(position, cell_type);
+    cell->SetDiameter(10);
+    cell->AddBiologyModule(new Secretion(dg));
+    cell->AddBiologyModule(new Chemotaxis(dg, 5));
+    return cell;
+  };
+
+  // Construct num_cells/2 cells of type 0
+  ModelInitializer::CreateCellsRandom(param->min_bound_, param->max_bound_,
+                                      num_cells / 2, construct);
+  // Construct num_cells/2 cells of type 1
+  dg = rm->GetDiffusionGrid(kSubstance1);
+  cell_type = -1;
+  ModelInitializer::CreateCellsRandom(param->min_bound_, param->max_bound_,
+                                      num_cells / 2, construct);
 
   // Run simulation for N timesteps
   simulation.GetScheduler()->Simulate(1000);
@@ -4442,85 +4428,6 @@ inline int Simulate(int argc, const char** argv) {
 }  // namespace bdm
 
 #endif  // DEMO_SOMA_CLUSTERING_H_
-// -----------------------------------------------------------------------------
-//
-// Copyright (C) The BioDynaMo Project.
-// All Rights Reserved.
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-//
-// See the LICENSE file distributed with this work for details.
-// See the NOTICE file distributed with this work for additional information
-// regarding copyright ownership.
-//
-// -----------------------------------------------------------------------------
-
-#ifndef SOMA_CLUSTERING_BIOLOGY_MODULES_H_
-#define SOMA_CLUSTERING_BIOLOGY_MODULES_H_
-
-#include "biodynamo.h"
-#include "my_cell.h"
-
-namespace bdm {
-
-enum Substances { kSubstance0, kSubstance1 };
-
-// Define displacement behavior:
-// Cells move along the diffusion gradient (from low concentration to high)
-struct Chemotaxis : public BaseBiologyModule {
-  BDM_STATELESS_BM_HEADER(Chemotaxis, BaseBiologyModule, 1);
-
-  Chemotaxis() : BaseBiologyModule(gAllEventIds) {}
-
-  void Run(SimObject* so) override {
-    if (auto* cell = dynamic_cast<MyCell*>(so)) {
-      auto* rm = Simulation::GetActive()->GetResourceManager();
-
-      DiffusionGrid* dg = nullptr;
-      if (cell->GetCellType() == 1) {
-        dg = rm->GetDiffusionGrid(kSubstance0);
-      } else {
-        dg = rm->GetDiffusionGrid(kSubstance1);
-      }
-
-      auto& position = cell->GetPosition();
-      Double3 gradient;
-      Double3 diff_gradient;
-
-      dg->GetGradient(position, &gradient);
-      diff_gradient = gradient * 5;
-      cell->UpdatePosition(diff_gradient);
-    }
-  }
-};
-
-// Define secretion behavior:
-struct SubstanceSecretion : public BaseBiologyModule {
-  BDM_STATELESS_BM_HEADER(SubstanceSecretion, BaseBiologyModule, 1);
-
-  SubstanceSecretion() : BaseBiologyModule(gAllEventIds) {}
-
-  void Run(SimObject* so) override {
-    if (auto* cell = dynamic_cast<MyCell*>(so)) {
-      auto* rm = Simulation::GetActive()->GetResourceManager();
-
-      DiffusionGrid* dg = nullptr;
-      if (cell->GetCellType() == 1) {
-        dg = rm->GetDiffusionGrid(kSubstance0);
-      } else {
-        dg = rm->GetDiffusionGrid(kSubstance1);
-      }
-
-      auto& secretion_position = cell->GetPosition();
-      dg->IncreaseConcentrationBy(secretion_position, 1);
-    }
-  }
-};
-
-}  // namespace bdm
-
-#endif  // SOMA_CLUSTERING_BIOLOGY_MODULES_H_
 // -----------------------------------------------------------------------------
 //
 // Copyright (C) The BioDynaMo Project.
@@ -4669,13 +4576,11 @@ static bool GetCriterion(double spatial_range, int target_n) {
 "", payloadCode, "@",
 "bdm::Cell", payloadCode, "@",
 "bdm::CellDivisionEvent", payloadCode, "@",
-"bdm::Chemotaxis", payloadCode, "@",
 "bdm::CommandLineOptions", payloadCode, "@",
 "bdm::DefaultForce", payloadCode, "@",
 "bdm::Environment", payloadCode, "@",
 "bdm::Event", payloadCode, "@",
 "bdm::Functor<void,bdm::SimObject*,bdm::SoHandle>", payloadCode, "@",
-"bdm::Functor<void,bdm::SimObject*>", payloadCode, "@",
 "bdm::Functor<void,const bdm::SimObject*,double>", payloadCode, "@",
 "bdm::InPlaceExecutionContext", payloadCode, "@",
 "bdm::Log", payloadCode, "@",
@@ -4689,11 +4594,14 @@ static bool GetCriterion(double spatial_range, int target_n) {
 "bdm::Param::ThreadSafetyMechanism", payloadCode, "@",
 "bdm::RootAdaptor", payloadCode, "@",
 "bdm::Scheduler", payloadCode, "@",
+"bdm::SimObjectOperationImpl", payloadCode, "@",
 "bdm::SoUidMap<bdm::SoHandle>", payloadCode, "@",
 "bdm::Spinlock", payloadCode, "@",
-"bdm::SubstanceSecretion", payloadCode, "@",
+"bdm::StandaloneOperationImpl", payloadCode, "@",
 "bdm::TFileRaii", payloadCode, "@",
 "bdm::ThreadInfo", payloadCode, "@",
+"bdm::Timing", payloadCode, "@",
+"bdm::TimingAggregator", payloadCode, "@",
 "bdm::UniqueEventIdFactory", payloadCode, "@",
 "bdm::UnorderedFlatmap<unsigned long,bdm::memory_manager_detail::PoolAllocator*>", payloadCode, "@",
 "bdm::Version", payloadCode, "@",
