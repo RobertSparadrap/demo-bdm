@@ -21,13 +21,13 @@
         </DataArray>
       </Points>
       <Cells>
-        <DataArray type="Int64" Name="connectivity" format="appended" RangeMin=""                     RangeMax=""                     offset="256"                 />
-        <DataArray type="Int64" Name="offsets" format="appended" RangeMin=""                     RangeMax=""                     offset="272"                 />
-        <DataArray type="UInt8" Name="types" format="appended" RangeMin=""                     RangeMax=""                     offset="288"                 />
+        <DataArray type="Int64" Name="connectivity" format="appended" RangeMin=""                     RangeMax=""                     offset="260"                 />
+        <DataArray type="Int64" Name="offsets" format="appended" RangeMin=""                     RangeMax=""                     offset="276"                 />
+        <DataArray type="UInt8" Name="types" format="appended" RangeMin=""                     RangeMax=""                     offset="292"                 />
       </Cells>
     </Piece>
   </UnstructuredGrid>
   <AppendedData encoding="base64">
-   _AQAAAACAAABIAAAAEAAAAA==eJxjYAABOwcGCmkAlKQEbw==AQAAAACAAADYAAAAigAAAA==eJxrvHQlPCDezUH4IO9vEF18GcLf7HbM0D84xIE/ufDnoruuDiclyvhB9CuNjw0g+oxDsAFI/jWUfwwqzwNVvw+q/67NpxdLdNwd9r365MB9N8QhD0r/PrrRHUT/PLHpP0gexofJw9TD9FculZVInR3qsA5Kw/hzIrY3yugHOTjFQmgYHwDzR2NUAAAAAACAAAAAAAAAAAAAAACAAAAAAAAAAAAAAACAAAAAAAAA
+   _AQAAAACAAABIAAAAEAAAAA==eJxjYAABOwcGCmkAlKQEbw==AQAAAACAAADYAAAAiwAAAA==eJxrvHQlPCDezUH4IO9vEF18GcLf7HbM0D84xIE/ufDnoruuDiclyvhB9CuNjw0g+oxDsAFI/jWUfwwqzwNVvw+q/67NpxdLdNwd9r365MB9N8QhD0r/PrrRHUT/PLHpP0gexofJw9TD9D8smNFfPDvUQbAQQsP4T1wiOaL1gxw6PCE0jA8ARGBkuw==AAAAAACAAAAAAAAAAAAAAACAAAAAAAAAAAAAAACAAAAAAAAA
   </AppendedData>
 </VTKFile>

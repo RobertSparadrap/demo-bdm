@@ -2,14 +2,14 @@
 
 FILES=*
 for i in $FILES; do
-    if [[ $i == "my_bensh.sh" || $i == "makefile_project" || $i == "sbml_integration" || $i == "runtime.txt" || $i == "graph.py" ]]; then
+    if [[ $i != "soma_clustering" && $i != "tumor_concept" ]]; then
         continue
     fi
     printf "$i\n\n" >> runtime.txt
     cd $i
     echo -e '\033[1;31m'$i'\033[0m'
     biodynamo build
-    for j in `seq 1 8`;
+    for j in `seq 1 $1`;
     do
     ./build/$i --benchmark 2>&1 | awk '/BM_BDM/ {print $2, $3, $4, $5, $6}' >> ../runtime.txt
     done
