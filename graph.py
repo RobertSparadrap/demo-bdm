@@ -26,30 +26,50 @@ def take_data_of_the_demo(runtime, x):
             break
         data_run[i] = run.strip()
         i += 1
-    return data_run
+    return data_run, i
 
-# Search the Data Demo
-def search_loop(runtime, demo, demo2, data):
+def take_x(runtime):
+    i = 0
     while 1:
-        if data == demo+'\n' or data == demo2+'\n':
-            runtime.readline()
+        run = runtime.readline()
+        if run == "###########################################################\n":
             break
+        i += 1
+    return i
+
+def search_loop(i, x):
+    demo = sys.argv[1]
+    demo2 = sys.argv[2]
+    runtime = open("runtime.txt")
+    j = 0
+    while j <= i:
         data = runtime.readline()
-    return data
+        if j == i and data == demo+'\n':
+            break
+        if data == demo+'\n':
+            j += 1
+    data = runtime.readline()
+    x = take_x(runtime)
+    runtime.close()
+    return x
 
 # Take the Data Demo
 def take_demo_time(i, x):
     demo = sys.argv[1]
     demo2 = sys.argv[2]
+    x = search_loop(i, x)
     runtime = open("runtime.txt")
     j = 0
-    while j < 1+i*(x+7)*2:
+    while j <= i:
         data = runtime.readline()
-        j += 1
-    data = search_loop(runtime, demo, demo2, data)
-    data_run = take_data_of_the_demo(runtime, x)
+        if j == i and data == demo+'\n':
+            break
+        if data == demo+'\n':
+            j += 1
+    data = runtime.readline()
+    data_run, h = take_data_of_the_demo(runtime, x)
     runtime.close()
-    return data_run
+    return data_run, x
 
 # Take the CPU in the Data Demo
 def take_data_CPU(data_run, x):
@@ -87,13 +107,10 @@ def nb_runtimes():
 # Graph to directly compare Data
 def compare(i):
     j = 0
+    x = nb_data()
     while j < i:
-        x = nb_data()
-        print(i)
-        print(x)
-        data_run = take_demo_time(j, x)
+        data_run, x = take_demo_time(j, x)
         data_CPU = take_data_CPU(data_run, x)
-        print(data_CPU)
         plt.plot(range(x), data_CPU, 'b--')
         j += 1
     return
@@ -102,17 +119,18 @@ def compare(i):
 def average(i):
     j = 0
     moy = [0] * i
+    x = nb_data()
     while j < i:
         tmp = 0
         h = 0
-        x = nb_data()
-        data_run = take_demo_time(j, x)
+        data_run, x = take_demo_time(j, x)
         data_CPU = take_data_CPU(data_run, x)
         while h < x:
             tmp = data_CPU[h] + tmp
             h += 1
         moy[j] = tmp / x
         j += 1
+        print(moy)
     plt.plot(range(i), moy, 'r--')
     return
 
@@ -127,8 +145,7 @@ def main():
         if sys.argv[2] == "--average" or sys.argv[2] == "-a" or sys.argv[1] == "--average" or sys.argv[1] == "-a":
             average(i)
     except:
-        print("Do you want to compare data or to compare average data ?")
-        exit()
+        print("Error")
     plt.xlabel(sys.argv[1])
     plt.show()
 
