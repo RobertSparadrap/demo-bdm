@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/bdm/demo/soma_clustering_2/build",
+  "command": "/usr/bin/c++ -DBDMSYS=\\\"/home/bdm/biodynamo/build\\\" -DUSE_DICT -DUSE_NUMA -I/home/bdm/demo/soma_clustering_2/test -I/home/bdm/biodynamo/build/third_party/root/include -I/home/bdm/demo/soma_clustering_2/build/omp -I/home/bdm/biodynamo/build/include -I/home/bdm/demo/soma_clustering_2/src  -Wall -Wno-missing-braces -m64 -fPIC -fopenmp -O3 -DNDEBUG -o CMakeFiles/clang-tidy-header-helper.dir/clang_tidy_header_helper.cc.o -c /home/bdm/demo/soma_clustering_2/build/clang_tidy_header_helper.cc",
+  "file": "/home/bdm/demo/soma_clustering_2/build/clang_tidy_header_helper.cc"
+},
+{
+  "directory": "/home/bdm/demo/soma_clustering_2/build",
+  "command": "/usr/bin/c++ -DBDMSYS=\\\"/home/bdm/biodynamo/build\\\" -DUSE_DICT -DUSE_NUMA -I/home/bdm/biodynamo/build/third_party/root/include -I/home/bdm/demo/soma_clustering_2/build/omp -I/home/bdm/biodynamo/build/include -I/home/bdm/demo/soma_clustering_2/src  -Wall -Wno-missing-braces -m64 -fPIC -fopenmp -O3 -DNDEBUG -fopenmp -std=c++14 -o CMakeFiles/soma_clustering_2.dir/src/soma_clustering_2.cc.o -c /home/bdm/demo/soma_clustering_2/src/soma_clustering_2.cc",
+  "file": "/home/bdm/demo/soma_clustering_2/src/soma_clustering_2.cc"
+},
+{
+  "directory": "/home/bdm/demo/soma_clustering_2/build",
+  "command": "/usr/bin/c++ -DBDMSYS=\\\"/home/bdm/biodynamo/build\\\" -DUSE_DICT -DUSE_NUMA -I/home/bdm/biodynamo/build/third_party/root/include -I/home/bdm/demo/soma_clustering_2/build/omp -I/home/bdm/biodynamo/build/include -I/home/bdm/demo/soma_clustering_2/src  -Wall -Wno-missing-braces -m64 -fPIC -fopenmp -O3 -DNDEBUG -fopenmp -std=c++14 -o CMakeFiles/soma_clustering_2.dir/soma_clustering_2_dict.cc.o -c /home/bdm/demo/soma_clustering_2/build/soma_clustering_2_dict.cc",
+  "file": "/home/bdm/demo/soma_clustering_2/build/soma_clustering_2_dict.cc"
+}
+]

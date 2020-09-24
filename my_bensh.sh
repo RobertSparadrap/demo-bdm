@@ -2,7 +2,7 @@
 
 FILES=*
 for i in $FILES; do
-    if [[ $i != "soma_clustering" && $i != "tumor_concept" ]]; then
+    if [[ $i != "soma_clustering" && $i != "soma_clustering_2" && $i != "tumor_concept" ]]; then
         continue
     fi
     printf "$i\n\n" >> runtime.txt
