@@ -78,7 +78,7 @@ def take_data_CPU(data_run, x):
     i = 0
     while i < x:
         CPU = data_run[i].split()
-        data_CPU[i] = int(CPU[2])
+        data_CPU[i] = int(CPU[2]) * 10**(-9)
         i += 1
     return data_CPU
 
@@ -142,7 +142,7 @@ def average(i):
         moy[j] = tmp / x
         error_data[j] = errorbar_data(data_CPU, moy[j], h)
         j += 1
-    plt.errorbar(range(i), moy, error_data, fmt='r--')
+    plt.errorbar(range(i), moy, error_data, fmt='b--', ecolor= 'r')
     return
 
 # main program
@@ -158,6 +158,9 @@ def main():
     except:
         print("Error")
     plt.xlabel(sys.argv[1])
+    axis = plt.axis()
+    size = -1/(axis[2]-axis[3])/100
+    plt.axis([axis[0], axis[1], axis[2]*(1-size), axis[3]*(1+size)])
     plt.show()
 
 if __name__ == "__main__":
