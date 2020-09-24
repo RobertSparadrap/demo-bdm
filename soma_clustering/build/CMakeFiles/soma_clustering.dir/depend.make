@@ -204,6 +204,7 @@ CMakeFiles/soma_clustering.dir/src/soma_clustering.cc.o: /home/bdm/biodynamo/bui
 CMakeFiles/soma_clustering.dir/src/soma_clustering.cc.o: ../src/my_cell.h
 CMakeFiles/soma_clustering.dir/src/soma_clustering.cc.o: ../src/soma_clustering.cc
 CMakeFiles/soma_clustering.dir/src/soma_clustering.cc.o: ../src/soma_clustering.h
+CMakeFiles/soma_clustering.dir/src/soma_clustering.cc.o: ../src/soma_clustering_biology_modules.h
 CMakeFiles/soma_clustering.dir/src/soma_clustering.cc.o: ../src/validation_criterion.h
 CMakeFiles/soma_clustering.dir/src/soma_clustering.cc.o: omp/omp.h
 

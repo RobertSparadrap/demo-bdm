@@ -205,5 +205,6 @@ CMakeFiles/soma_clustering.dir/src/soma_clustering.cc.o
  /home/bdm/demo/soma_clustering/src/my_cell.h
  /home/bdm/demo/soma_clustering/src/soma_clustering.cc
  /home/bdm/demo/soma_clustering/src/soma_clustering.h
+ /home/bdm/demo/soma_clustering/src/soma_clustering_biology_modules.h
  /home/bdm/demo/soma_clustering/src/validation_criterion.h
  omp/omp.h

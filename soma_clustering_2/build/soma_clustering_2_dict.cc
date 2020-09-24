@@ -1620,47 +1620,6 @@ namespace ROOT {
 } // end of namespace ROOT
 
 namespace ROOT {
-   static TClass *bdmcLcLEnvironment_Dictionary();
-   static void bdmcLcLEnvironment_TClassManip(TClass*);
-   static void delete_bdmcLcLEnvironment(void *p);
-   static void deleteArray_bdmcLcLEnvironment(void *p);
-   static void destruct_bdmcLcLEnvironment(void *p);
-
-   // Function generating the singleton type initializer
-   static TGenericClassInfo *GenerateInitInstanceLocal(const ::bdm::Environment*)
-   {
-      ::bdm::Environment *ptr = 0;
-      static ::TVirtualIsAProxy* isa_proxy = new ::TIsAProxy(typeid(::bdm::Environment));
-      static ::ROOT::TGenericClassInfo 
-         instance("bdm::Environment", "core/environment/environment.h", 25,
-                  typeid(::bdm::Environment), ::ROOT::Internal::DefineBehavior(ptr, ptr),
-                  &bdmcLcLEnvironment_Dictionary, isa_proxy, 4,
-                  sizeof(::bdm::Environment) );
-      instance.SetDelete(&delete_bdmcLcLEnvironment);
-      instance.SetDeleteArray(&deleteArray_bdmcLcLEnvironment);
-      instance.SetDestructor(&destruct_bdmcLcLEnvironment);
-      return &instance;
-   }
-   TGenericClassInfo *GenerateInitInstance(const ::bdm::Environment*)
-   {
-      return GenerateInitInstanceLocal((::bdm::Environment*)0);
-   }
-   // Static variable to force the class initialization
-   static ::ROOT::TGenericClassInfo *_R__UNIQUE_DICT_(Init) = GenerateInitInstanceLocal((const ::bdm::Environment*)0x0); R__UseDummy(_R__UNIQUE_DICT_(Init));
-
-   // Dictionary for non-ClassDef classes
-   static TClass *bdmcLcLEnvironment_Dictionary() {
-      TClass* theClass =::ROOT::GenerateInitInstanceLocal((const ::bdm::Environment*)0x0)->GetClass();
-      bdmcLcLEnvironment_TClassManip(theClass);
-   return theClass;
-   }
-
-   static void bdmcLcLEnvironment_TClassManip(TClass* ){
-   }
-
-} // end of namespace ROOT
-
-namespace ROOT {
    static TClass *bdmcLcLEnvironmentcLcLNeighborMutexBuilder_Dictionary();
    static void bdmcLcLEnvironmentcLcLNeighborMutexBuilder_TClassManip(TClass*);
    static void delete_bdmcLcLEnvironmentcLcLNeighborMutexBuilder(void *p);
@@ -2894,20 +2853,6 @@ namespace ROOT {
 
 namespace ROOT {
    // Wrapper around operator delete
-   static void delete_bdmcLcLEnvironment(void *p) {
-      delete ((::bdm::Environment*)p);
-   }
-   static void deleteArray_bdmcLcLEnvironment(void *p) {
-      delete [] ((::bdm::Environment*)p);
-   }
-   static void destruct_bdmcLcLEnvironment(void *p) {
-      typedef ::bdm::Environment current_t;
-      ((current_t*)p)->~current_t();
-   }
-} // end of namespace ROOT for class ::bdm::Environment
-
-namespace ROOT {
-   // Wrapper around operator delete
    static void delete_bdmcLcLEnvironmentcLcLNeighborMutexBuilder(void *p) {
       delete ((::bdm::Environment::NeighborMutexBuilder*)p);
    }
@@ -4060,7 +4005,6 @@ namespace bdm{class __attribute__((annotate(R"ATTRDUMP(pattern@@@bdm::*)ATTRDUMP
 namespace bdm{class __attribute__((annotate(R"ATTRDUMP(pattern@@@bdm::*)ATTRDUMP"))) __attribute__((annotate("$clingAutoload$core/param/module_param.h")))  __attribute__((annotate("$clingAutoload$biodynamo.h")))  ModuleParamUidGenerator;}
 namespace bdm{struct __attribute__((annotate(R"ATTRDUMP(pattern@@@bdm::*)ATTRDUMP"))) __attribute__((annotate("$clingAutoload$core/util/math.h")))  __attribute__((annotate("$clingAutoload$biodynamo.h")))  Math;}
 namespace bdm{class __attribute__((annotate(R"ATTRDUMP(pattern@@@bdm::*)ATTRDUMP"))) __attribute__((annotate("$clingAutoload$core/scheduler.h")))  __attribute__((annotate("$clingAutoload$biodynamo.h")))  Scheduler;}
-namespace bdm{class __attribute__((annotate(R"ATTRDUMP(pattern@@@bdm::*)ATTRDUMP"))) __attribute__((annotate("$clingAutoload$core/environment/environment.h")))  __attribute__((annotate("$clingAutoload$biodynamo.h")))  Environment;}
 namespace std{template <typename _Tp, std::size_t _Nm> struct __attribute__((annotate("$clingAutoload$array")))  __attribute__((annotate("$clingAutoload$biodynamo.h")))  array;
 }
 namespace bdm{struct __attribute__((annotate(R"ATTRDUMP(pattern@@@bdm::*)ATTRDUMP"))) __attribute__((annotate("$clingAutoload$core/model_initializer.h")))  __attribute__((annotate("$clingAutoload$biodynamo.h")))  ModelInitializer;}

@@ -121,7 +121,6 @@ tumor_concept_EXTERNAL_OBJECTS =
 tumor_concept: CMakeFiles/tumor_concept.dir/src/tumor_concept.cc.o
 tumor_concept: CMakeFiles/tumor_concept.dir/tumor_concept_dict.cc.o
 tumor_concept: CMakeFiles/tumor_concept.dir/build.make
-tumor_concept: /usr/lib/x86_64-linux-gnu/libnuma.so
 tumor_concept: /home/bdm/biodynamo/build/third_party/root/lib/libCore.so
 tumor_concept: /home/bdm/biodynamo/build/third_party/root/lib/libRIO.so
 tumor_concept: /home/bdm/biodynamo/build/third_party/root/lib/libNet.so

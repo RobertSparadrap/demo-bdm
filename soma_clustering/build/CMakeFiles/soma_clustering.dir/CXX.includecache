@@ -2007,8 +2007,16 @@ benchmark/benchmark.h
 -
 my_cell.h
 /home/bdm/demo/soma_clustering/src/my_cell.h
+soma_clustering_biology_modules.h
+/home/bdm/demo/soma_clustering/src/soma_clustering_biology_modules.h
 validation_criterion.h
 /home/bdm/demo/soma_clustering/src/validation_criterion.h
+
+/home/bdm/demo/soma_clustering/src/soma_clustering_biology_modules.h
+biodynamo.h
+/home/bdm/demo/soma_clustering/src/biodynamo.h
+my_cell.h
+/home/bdm/demo/soma_clustering/src/my_cell.h
 
 /home/bdm/demo/soma_clustering/src/validation_criterion.h
 vector

@@ -16,6 +16,7 @@
 
 //int main(int argc, const char** argv) { return bdm::Simulate(argc, argv); }
 
+
 static void BM_BDM(benchmark::State& state) {
   const char** argv = (const char**) malloc(2);
   argv[0] = "./soma_clustering";

@@ -11,14 +11,10 @@ string
 -
 core/biology_module/biology_module.h
 /home/bdm/biodynamo/build/include/core/biology_module/biology_module.h
-core/biology_module/chemotaxis.h
-/home/bdm/biodynamo/build/include/core/biology_module/chemotaxis.h
 core/biology_module/grow_divide.h
 /home/bdm/biodynamo/build/include/core/biology_module/grow_divide.h
 core/biology_module/regulate_genes.h
 /home/bdm/biodynamo/build/include/core/biology_module/regulate_genes.h
-core/biology_module/secretion.h
-/home/bdm/biodynamo/build/include/core/biology_module/secretion.h
 core/environment/environment.h
 /home/bdm/biodynamo/build/include/core/environment/environment.h
 core/event/cell_division_event.h
@@ -41,10 +37,6 @@ core/sim_object/cell.h
 /home/bdm/biodynamo/build/include/core/sim_object/cell.h
 core/sim_object/sim_object.h
 /home/bdm/biodynamo/build/include/core/sim_object/sim_object.h
-core/util/filesystem.h
-/home/bdm/biodynamo/build/include/core/util/filesystem.h
-core/util/timing.h
-/home/bdm/biodynamo/build/include/core/util/timing.h
 core/util/vtune.h
 /home/bdm/biodynamo/build/include/core/util/vtune.h
 core/visualization/root/notebook_util.h
@@ -57,14 +49,6 @@ core/sim_object/sim_object.h
 /home/bdm/biodynamo/build/include/core/biology_module/core/sim_object/sim_object.h
 core/util/type.h
 /home/bdm/biodynamo/build/include/core/biology_module/core/util/type.h
-
-/home/bdm/biodynamo/build/include/core/biology_module/chemotaxis.h
-core/biology_module/biology_module.h
-/home/bdm/biodynamo/build/include/core/biology_module/core/biology_module/biology_module.h
-core/diffusion_grid.h
-/home/bdm/biodynamo/build/include/core/biology_module/core/diffusion_grid.h
-core/sim_object/cell.h
-/home/bdm/biodynamo/build/include/core/biology_module/core/sim_object/cell.h
 
 /home/bdm/biodynamo/build/include/core/biology_module/grow_divide.h
 core/biology_module/biology_module.h
@@ -93,14 +77,6 @@ core/simulation.h
 /home/bdm/biodynamo/build/include/core/biology_module/core/simulation.h
 core/util/root.h
 /home/bdm/biodynamo/build/include/core/biology_module/core/util/root.h
-
-/home/bdm/biodynamo/build/include/core/biology_module/secretion.h
-core/biology_module/biology_module.h
-/home/bdm/biodynamo/build/include/core/biology_module/core/biology_module/biology_module.h
-core/diffusion_grid.h
-/home/bdm/biodynamo/build/include/core/biology_module/core/diffusion_grid.h
-core/sim_object/cell.h
-/home/bdm/biodynamo/build/include/core/biology_module/core/sim_object/cell.h
 
 /home/bdm/biodynamo/build/include/core/container/flatmap.h
 cassert
@@ -309,34 +285,30 @@ core/util/random.h
 /home/bdm/biodynamo/build/include/core/operation/operation.h
 functional
 -
-string
--
-vector
--
-core/util/log.h
-/home/bdm/biodynamo/build/include/core/operation/core/util/log.h
-
-/home/bdm/biodynamo/build/include/core/param/command_line_options.h
-TError.h
--
-cxxopts.h
--
-algorithm
--
 iostream
 -
-ostream
--
 string
 -
+core/functor.h
+/home/bdm/biodynamo/build/include/core/operation/core/functor.h
+
+/home/bdm/biodynamo/build/include/core/param/command_line_options.h
+cxxopts.h
+/home/bdm/biodynamo/build/include/core/param/cxxopts.h
+TError.h
+/home/bdm/biodynamo/build/include/core/param/TError.h
 core/simulation.h
 /home/bdm/biodynamo/build/include/core/param/core/simulation.h
 version.h
 /home/bdm/biodynamo/build/include/core/param/version.h
+algorithm
+-
+iostream
+-
+string
+-
 
 /home/bdm/biodynamo/build/include/core/param/module_param.h
-memory
--
 core/util/root.h
 /home/bdm/biodynamo/build/include/core/param/core/util/root.h
 cpptoml/cpptoml.h
@@ -344,8 +316,6 @@ cpptoml/cpptoml.h
 
 /home/bdm/biodynamo/build/include/core/param/param.h
 cinttypes
--
-map
 -
 memory
 -
@@ -397,8 +367,6 @@ core/container/so_uid_map.h
 /home/bdm/biodynamo/build/include/core/core/container/so_uid_map.h
 core/diffusion_grid.h
 /home/bdm/biodynamo/build/include/core/core/diffusion_grid.h
-core/operation/operation.h
-/home/bdm/biodynamo/build/include/core/core/operation/operation.h
 core/sim_object/sim_object.h
 /home/bdm/biodynamo/build/include/core/core/sim_object/sim_object.h
 core/sim_object/so_handle.h
@@ -419,22 +387,18 @@ core/util/type.h
 /home/bdm/biodynamo/build/include/core/core/util/type.h
 
 /home/bdm/biodynamo/build/include/core/scheduler.h
-algorithm
--
 chrono
 -
 functional
 -
-string
+set
 -
-unordered_map
+string
 -
 vector
 -
 core/operation/operation.h
 /home/bdm/biodynamo/build/include/core/core/operation/operation.h
-core/util/timing_aggregator.h
-/home/bdm/biodynamo/build/include/core/core/util/timing_aggregator.h
 
 /home/bdm/biodynamo/build/include/core/shape.h
 
@@ -592,10 +556,6 @@ core/util/random.h
 core/util/root.h
 /home/bdm/biodynamo/build/include/core/core/util/root.h
 
-/home/bdm/biodynamo/build/include/core/util/filesystem.h
-string
--
-
 /home/bdm/biodynamo/build/include/core/util/io.h
 string
 -
@@ -614,8 +574,6 @@ TError.h
 cstdio
 -
 cstdlib
--
-functional
 -
 iostream
 -
@@ -667,8 +625,6 @@ Rtypes.h
 -
 TBuffer.h
 -
-TClass.h
--
 core/util/log.h
 /home/bdm/biodynamo/build/include/core/util/core/util/log.h
 
@@ -693,36 +649,6 @@ core/util/log.h
 /home/bdm/biodynamo/build/include/core/util/core/util/log.h
 core/util/numa.h
 /home/bdm/biodynamo/build/include/core/util/core/util/numa.h
-
-/home/bdm/biodynamo/build/include/core/util/timing.h
-chrono
--
-iostream
--
-string
--
-core/param/param.h
-/home/bdm/biodynamo/build/include/core/util/core/param/param.h
-core/simulation.h
-/home/bdm/biodynamo/build/include/core/util/core/simulation.h
-core/util/timing_aggregator.h
-/home/bdm/biodynamo/build/include/core/util/core/util/timing_aggregator.h
-
-/home/bdm/biodynamo/build/include/core/util/timing_aggregator.h
-map
--
-ostream
--
-string
--
-vector
--
-TSystem.h
-/home/bdm/biodynamo/build/include/core/util/TSystem.h
-core/simulation.h
-/home/bdm/biodynamo/build/include/core/util/core/simulation.h
-core/util/math.h
-/home/bdm/biodynamo/build/include/core/util/core/util/math.h
 
 /home/bdm/biodynamo/build/include/core/util/type.h
 type_traits
@@ -877,8 +803,6 @@ vector
 -
 core/default_force.h
 /home/bdm/biodynamo/build/include/neuroscience/core/default_force.h
-core/scheduler.h
-/home/bdm/biodynamo/build/include/neuroscience/core/scheduler.h
 core/shape.h
 /home/bdm/biodynamo/build/include/neuroscience/core/shape.h
 core/sim_object/sim_object.h
@@ -930,8 +854,6 @@ neuroscience/neuron_or_neurite.h
 
 /home/bdm/biodynamo/build/include/neuroscience/param.h
 cinttypes
--
-memory
 -
 set
 -
