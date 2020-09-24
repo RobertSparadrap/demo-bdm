@@ -172,7 +172,7 @@ CMakeFiles/show-format-staged.dir/clean:
 CMakeFiles/tidy-staged.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tidy-staged.dir/build.make CMakeFiles/tidy-staged.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tidy-staged.dir/build.make CMakeFiles/tidy-staged.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bdm/demo/soma_clustering/build/CMakeFiles --progress-num=30 "Built target tidy-staged"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bdm/demo/soma_clustering/build/CMakeFiles --progress-num=28 "Built target tidy-staged"
 .PHONY : CMakeFiles/tidy-staged.dir/all
 
 # Build rule for subdir invocation for target.
@@ -226,7 +226,7 @@ CMakeFiles/format-all.dir/clean:
 CMakeFiles/tidy.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tidy.dir/build.make CMakeFiles/tidy.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tidy.dir/build.make CMakeFiles/tidy.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bdm/demo/soma_clustering/build/CMakeFiles --progress-num=28 "Built target tidy"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bdm/demo/soma_clustering/build/CMakeFiles --progress-num=26 "Built target tidy"
 .PHONY : CMakeFiles/tidy.dir/all
 
 # Build rule for subdir invocation for target.
@@ -739,7 +739,7 @@ CMakeFiles/check-format-all.dir/clean:
 CMakeFiles/tidy-all.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tidy-all.dir/build.make CMakeFiles/tidy-all.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tidy-all.dir/build.make CMakeFiles/tidy-all.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bdm/demo/soma_clustering/build/CMakeFiles --progress-num=29 "Built target tidy-all"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bdm/demo/soma_clustering/build/CMakeFiles --progress-num=27 "Built target tidy-all"
 .PHONY : CMakeFiles/tidy-all.dir/all
 
 # Build rule for subdir invocation for target.
@@ -793,12 +793,12 @@ CMakeFiles/show-tidy-all.dir/clean:
 CMakeFiles/soma_clustering.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/soma_clustering.dir/build.make CMakeFiles/soma_clustering.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/soma_clustering.dir/build.make CMakeFiles/soma_clustering.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bdm/demo/soma_clustering/build/CMakeFiles --progress-num=24,25,26,27 "Built target soma_clustering"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bdm/demo/soma_clustering/build/CMakeFiles --progress-num=24,25 "Built target soma_clustering"
 .PHONY : CMakeFiles/soma_clustering.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/soma_clustering.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bdm/demo/soma_clustering/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bdm/demo/soma_clustering/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/soma_clustering.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bdm/demo/soma_clustering/build/CMakeFiles 0
 .PHONY : CMakeFiles/soma_clustering.dir/rule

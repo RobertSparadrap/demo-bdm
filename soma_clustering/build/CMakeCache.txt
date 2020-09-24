@@ -762,7 +762,7 @@ benchmark_DIR:PATH=/usr/local/lib/cmake/benchmark
 cuda:BOOL=OFF
 
 //Build with ROOT dictionaries
-dict:BOOL=ON
+dict:BOOL=off
 
 //The directory containing a CMake configuration file for embree.
 embree_DIR:PATH=/home/bdm/biodynamo/build/third_party/paraview/lib/cmake/embree-3.2.0

@@ -6,31 +6,15 @@
 
 #IncludeRegexTransform: 
 
-../src/my_cell.h
-biodynamo.h
--
-
-../src/validation_criterion.h
-vector
--
-biodynamo.h
-../src/biodynamo.h
-my_cell.h
-../src/my_cell.h
-
 /home/bdm/biodynamo/build/include/biodynamo.h
 string
 -
 core/biology_module/biology_module.h
 /home/bdm/biodynamo/build/include/core/biology_module/biology_module.h
-core/biology_module/chemotaxis.h
-/home/bdm/biodynamo/build/include/core/biology_module/chemotaxis.h
 core/biology_module/grow_divide.h
 /home/bdm/biodynamo/build/include/core/biology_module/grow_divide.h
 core/biology_module/regulate_genes.h
 /home/bdm/biodynamo/build/include/core/biology_module/regulate_genes.h
-core/biology_module/secretion.h
-/home/bdm/biodynamo/build/include/core/biology_module/secretion.h
 core/environment/environment.h
 /home/bdm/biodynamo/build/include/core/environment/environment.h
 core/event/cell_division_event.h
@@ -53,10 +37,6 @@ core/sim_object/cell.h
 /home/bdm/biodynamo/build/include/core/sim_object/cell.h
 core/sim_object/sim_object.h
 /home/bdm/biodynamo/build/include/core/sim_object/sim_object.h
-core/util/filesystem.h
-/home/bdm/biodynamo/build/include/core/util/filesystem.h
-core/util/timing.h
-/home/bdm/biodynamo/build/include/core/util/timing.h
 core/util/vtune.h
 /home/bdm/biodynamo/build/include/core/util/vtune.h
 core/visualization/root/notebook_util.h
@@ -69,14 +49,6 @@ core/sim_object/sim_object.h
 /home/bdm/biodynamo/build/include/core/biology_module/core/sim_object/sim_object.h
 core/util/type.h
 /home/bdm/biodynamo/build/include/core/biology_module/core/util/type.h
-
-/home/bdm/biodynamo/build/include/core/biology_module/chemotaxis.h
-core/biology_module/biology_module.h
-/home/bdm/biodynamo/build/include/core/biology_module/core/biology_module/biology_module.h
-core/diffusion_grid.h
-/home/bdm/biodynamo/build/include/core/biology_module/core/diffusion_grid.h
-core/sim_object/cell.h
-/home/bdm/biodynamo/build/include/core/biology_module/core/sim_object/cell.h
 
 /home/bdm/biodynamo/build/include/core/biology_module/grow_divide.h
 core/biology_module/biology_module.h
@@ -105,14 +77,6 @@ core/simulation.h
 /home/bdm/biodynamo/build/include/core/biology_module/core/simulation.h
 core/util/root.h
 /home/bdm/biodynamo/build/include/core/biology_module/core/util/root.h
-
-/home/bdm/biodynamo/build/include/core/biology_module/secretion.h
-core/biology_module/biology_module.h
-/home/bdm/biodynamo/build/include/core/biology_module/core/biology_module/biology_module.h
-core/diffusion_grid.h
-/home/bdm/biodynamo/build/include/core/biology_module/core/diffusion_grid.h
-core/sim_object/cell.h
-/home/bdm/biodynamo/build/include/core/biology_module/core/sim_object/cell.h
 
 /home/bdm/biodynamo/build/include/core/container/flatmap.h
 cassert
@@ -321,34 +285,30 @@ core/util/random.h
 /home/bdm/biodynamo/build/include/core/operation/operation.h
 functional
 -
-string
--
-vector
--
-core/util/log.h
-/home/bdm/biodynamo/build/include/core/operation/core/util/log.h
-
-/home/bdm/biodynamo/build/include/core/param/command_line_options.h
-TError.h
--
-cxxopts.h
--
-algorithm
--
 iostream
 -
-ostream
--
 string
 -
+core/functor.h
+/home/bdm/biodynamo/build/include/core/operation/core/functor.h
+
+/home/bdm/biodynamo/build/include/core/param/command_line_options.h
+cxxopts.h
+/home/bdm/biodynamo/build/include/core/param/cxxopts.h
+TError.h
+/home/bdm/biodynamo/build/include/core/param/TError.h
 core/simulation.h
 /home/bdm/biodynamo/build/include/core/param/core/simulation.h
 version.h
 /home/bdm/biodynamo/build/include/core/param/version.h
+algorithm
+-
+iostream
+-
+string
+-
 
 /home/bdm/biodynamo/build/include/core/param/module_param.h
-memory
--
 core/util/root.h
 /home/bdm/biodynamo/build/include/core/param/core/util/root.h
 cpptoml/cpptoml.h
@@ -356,8 +316,6 @@ cpptoml/cpptoml.h
 
 /home/bdm/biodynamo/build/include/core/param/param.h
 cinttypes
--
-map
 -
 memory
 -
@@ -409,8 +367,6 @@ core/container/so_uid_map.h
 /home/bdm/biodynamo/build/include/core/core/container/so_uid_map.h
 core/diffusion_grid.h
 /home/bdm/biodynamo/build/include/core/core/diffusion_grid.h
-core/operation/operation.h
-/home/bdm/biodynamo/build/include/core/core/operation/operation.h
 core/sim_object/sim_object.h
 /home/bdm/biodynamo/build/include/core/core/sim_object/sim_object.h
 core/sim_object/so_handle.h
@@ -431,22 +387,18 @@ core/util/type.h
 /home/bdm/biodynamo/build/include/core/core/util/type.h
 
 /home/bdm/biodynamo/build/include/core/scheduler.h
-algorithm
--
 chrono
 -
 functional
 -
-string
+set
 -
-unordered_map
+string
 -
 vector
 -
 core/operation/operation.h
 /home/bdm/biodynamo/build/include/core/core/operation/operation.h
-core/util/timing_aggregator.h
-/home/bdm/biodynamo/build/include/core/core/util/timing_aggregator.h
 
 /home/bdm/biodynamo/build/include/core/shape.h
 
@@ -604,10 +556,6 @@ core/util/random.h
 core/util/root.h
 /home/bdm/biodynamo/build/include/core/core/util/root.h
 
-/home/bdm/biodynamo/build/include/core/util/filesystem.h
-string
--
-
 /home/bdm/biodynamo/build/include/core/util/io.h
 string
 -
@@ -626,8 +574,6 @@ TError.h
 cstdio
 -
 cstdlib
--
-functional
 -
 iostream
 -
@@ -679,8 +625,6 @@ Rtypes.h
 -
 TBuffer.h
 -
-TClass.h
--
 core/util/log.h
 /home/bdm/biodynamo/build/include/core/util/core/util/log.h
 
@@ -705,36 +649,6 @@ core/util/log.h
 /home/bdm/biodynamo/build/include/core/util/core/util/log.h
 core/util/numa.h
 /home/bdm/biodynamo/build/include/core/util/core/util/numa.h
-
-/home/bdm/biodynamo/build/include/core/util/timing.h
-chrono
--
-iostream
--
-string
--
-core/param/param.h
-/home/bdm/biodynamo/build/include/core/util/core/param/param.h
-core/simulation.h
-/home/bdm/biodynamo/build/include/core/util/core/simulation.h
-core/util/timing_aggregator.h
-/home/bdm/biodynamo/build/include/core/util/core/util/timing_aggregator.h
-
-/home/bdm/biodynamo/build/include/core/util/timing_aggregator.h
-map
--
-ostream
--
-string
--
-vector
--
-TSystem.h
-/home/bdm/biodynamo/build/include/core/util/TSystem.h
-core/simulation.h
-/home/bdm/biodynamo/build/include/core/util/core/simulation.h
-core/util/math.h
-/home/bdm/biodynamo/build/include/core/util/core/util/math.h
 
 /home/bdm/biodynamo/build/include/core/util/type.h
 type_traits
@@ -889,8 +803,6 @@ vector
 -
 core/default_force.h
 /home/bdm/biodynamo/build/include/neuroscience/core/default_force.h
-core/scheduler.h
-/home/bdm/biodynamo/build/include/neuroscience/core/scheduler.h
 core/shape.h
 /home/bdm/biodynamo/build/include/neuroscience/core/shape.h
 core/sim_object/sim_object.h
@@ -942,8 +854,6 @@ neuroscience/neuron_or_neurite.h
 
 /home/bdm/biodynamo/build/include/neuroscience/param.h
 cinttypes
--
-memory
 -
 set
 -
@@ -1300,10 +1210,6 @@ limits
 
 /home/bdm/biodynamo/build/third_party/root/include/Math/TRandomEngine.h
 
-/home/bdm/biodynamo/build/third_party/root/include/RConfig.h
-ROOT/RConfig.hxx
--
-
 /home/bdm/biodynamo/build/third_party/root/include/RConfigure.h
 
 /home/bdm/biodynamo/build/third_party/root/include/ROOT/RConcurrentHashColl.hxx
@@ -1420,12 +1326,6 @@ DllImport.h
 stddef.h
 -
 
-/home/bdm/biodynamo/build/third_party/root/include/RtypesImp.h
-TMemberInspector.h
-/home/bdm/biodynamo/build/third_party/root/include/TMemberInspector.h
-TError.h
-/home/bdm/biodynamo/build/third_party/root/include/TError.h
-
 /home/bdm/biodynamo/build/third_party/root/include/TAtt3D.h
 Rtypes.h
 /home/bdm/biodynamo/build/third_party/root/include/Rtypes.h
@@ -1524,20 +1424,6 @@ thread
 unordered_set
 -
 
-/home/bdm/biodynamo/build/third_party/root/include/TCollectionProxyInfo.h
-Rtypes.h
-/home/bdm/biodynamo/build/third_party/root/include/Rtypes.h
-TError.h
-/home/bdm/biodynamo/build/third_party/root/include/TError.h
-vector
--
-forward_list
--
-
-/home/bdm/biodynamo/build/third_party/root/include/TDataMember.h
-TDictionary.h
-/home/bdm/biodynamo/build/third_party/root/include/TDictionary.h
-
 /home/bdm/biodynamo/build/third_party/root/include/TDataType.h
 TDictionary.h
 /home/bdm/biodynamo/build/third_party/root/include/TDictionary.h
@@ -1547,12 +1433,6 @@ string
 -
 Rtypes.h
 /home/bdm/biodynamo/build/third_party/root/include/Rtypes.h
-
-/home/bdm/biodynamo/build/third_party/root/include/TDictAttributeMap.h
-TObject.h
-/home/bdm/biodynamo/build/third_party/root/include/TObject.h
-THashTable.h
-/home/bdm/biodynamo/build/third_party/root/include/THashTable.h
 
 /home/bdm/biodynamo/build/third_party/root/include/TDictionary.h
 TNamed.h
@@ -1603,12 +1483,6 @@ ROOT/TRWSpinLock.hxx
 /home/bdm/biodynamo/build/third_party/root/include/ROOT/TRWSpinLock.hxx
 mutex
 -
-
-/home/bdm/biodynamo/build/third_party/root/include/TFileMergeInfo.h
-TObject.h
-/home/bdm/biodynamo/build/third_party/root/include/TObject.h
-TString.h
-/home/bdm/biodynamo/build/third_party/root/include/TString.h
 
 /home/bdm/biodynamo/build/third_party/root/include/TGenericClassInfo.h
 Rtypes.h
@@ -1892,10 +1766,6 @@ TMatrixTBase.h
 initializer_list
 -
 
-/home/bdm/biodynamo/build/third_party/root/include/TMemberInspector.h
-Rtypes.h
-/home/bdm/biodynamo/build/third_party/root/include/Rtypes.h
-
 /home/bdm/biodynamo/build/third_party/root/include/TNamed.h
 TObject.h
 /home/bdm/biodynamo/build/third_party/root/include/TObject.h
@@ -1953,20 +1823,6 @@ TVirtualQConnection.h
 /home/bdm/biodynamo/build/third_party/root/include/TVirtualQConnection.h
 TQClass.h
 /home/bdm/biodynamo/build/third_party/root/include/TQClass.h
-
-/home/bdm/biodynamo/build/third_party/root/include/TROOT.h
-TDirectory.h
-/home/bdm/biodynamo/build/third_party/root/include/TDirectory.h
-TList.h
-/home/bdm/biodynamo/build/third_party/root/include/TList.h
-RConfigure.h
-/home/bdm/biodynamo/build/third_party/root/include/RConfigure.h
-atomic
--
-string
--
-vector
--
 
 /home/bdm/biodynamo/build/third_party/root/include/TRandom.h
 Math/TRandomEngine.h
@@ -2133,74 +1989,6 @@ unistd.h
 -
 sys/types.h
 -
-
-/home/bdm/demo/soma_clustering/build/soma_clustering_dict.cc
-stddef.h
--
-stdio.h
--
-stdlib.h
--
-string.h
--
-assert.h
--
-RConfig.h
-/home/bdm/demo/soma_clustering/build/RConfig.h
-TClass.h
-/home/bdm/demo/soma_clustering/build/TClass.h
-TDictAttributeMap.h
-/home/bdm/demo/soma_clustering/build/TDictAttributeMap.h
-TInterpreter.h
-/home/bdm/demo/soma_clustering/build/TInterpreter.h
-TROOT.h
-/home/bdm/demo/soma_clustering/build/TROOT.h
-TBuffer.h
-/home/bdm/demo/soma_clustering/build/TBuffer.h
-TMemberInspector.h
-/home/bdm/demo/soma_clustering/build/TMemberInspector.h
-TInterpreter.h
-/home/bdm/demo/soma_clustering/build/TInterpreter.h
-TVirtualMutex.h
-/home/bdm/demo/soma_clustering/build/TVirtualMutex.h
-TError.h
-/home/bdm/demo/soma_clustering/build/TError.h
-RtypesImp.h
-/home/bdm/demo/soma_clustering/build/RtypesImp.h
-TIsAProxy.h
-/home/bdm/demo/soma_clustering/build/TIsAProxy.h
-TFileMergeInfo.h
-/home/bdm/demo/soma_clustering/build/TFileMergeInfo.h
-algorithm
--
-TCollectionProxyInfo.h
-/home/bdm/demo/soma_clustering/build/TCollectionProxyInfo.h
-TDataMember.h
-/home/bdm/demo/soma_clustering/build/TDataMember.h
-/home/bdm/demo/soma_clustering/src/my_cell.h
--
-/home/bdm/demo/soma_clustering/src/soma_clustering.h
--
-/home/bdm/demo/soma_clustering/src/validation_criterion.h
--
-biodynamo.h
--
-vector
--
-biodynamo.h
-/home/bdm/demo/soma_clustering/build/biodynamo.h
-benchmark/benchmark.h
--
-my_cell.h
-/home/bdm/demo/soma_clustering/build/my_cell.h
-validation_criterion.h
-/home/bdm/demo/soma_clustering/build/validation_criterion.h
-vector
--
-biodynamo.h
-/home/bdm/demo/soma_clustering/build/biodynamo.h
-my_cell.h
-/home/bdm/demo/soma_clustering/build/my_cell.h
 
 /home/bdm/demo/soma_clustering/src/my_cell.h
 biodynamo.h
