@@ -121,6 +121,7 @@ cell_division_EXTERNAL_OBJECTS =
 cell_division: CMakeFiles/cell_division.dir/src/cell_division.cc.o
 cell_division: CMakeFiles/cell_division.dir/cell_division_dict.cc.o
 cell_division: CMakeFiles/cell_division.dir/build.make
+cell_division: /usr/lib/x86_64-linux-gnu/libnuma.so
 cell_division: /home/bdm/biodynamo/build/third_party/root/lib/libCore.so
 cell_division: /home/bdm/biodynamo/build/third_party/root/lib/libRIO.so
 cell_division: /home/bdm/biodynamo/build/third_party/root/lib/libNet.so

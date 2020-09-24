@@ -159,7 +159,7 @@ def main():
         print("Error")
     plt.xlabel(sys.argv[1])
     axis = plt.axis()
-    size = -1/(axis[2]-axis[3])/100
+    size = -0.5/(axis[2]-axis[3])/100
     plt.axis([axis[0], axis[1], axis[2]*(1-size), axis[3]*(1+size)])
     plt.show()
 
