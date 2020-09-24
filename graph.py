@@ -3,6 +3,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import sys
+from math import *
 
 # To find the number of tests in the Demo
 def nb_data():
@@ -115,10 +116,20 @@ def compare(i):
         j += 1
     return
 
+def errorbar_data(data_CPU, moy, j):
+    i = 0
+    tmp = 0
+    while i < j:
+        tmp = (data_CPU[i] - moy) ** 2 + tmp
+        i += 1
+    tmp = sqrt(tmp/j)
+    return tmp
+
 # Graph to compare the average Data
 def average(i):
     j = 0
     moy = [0] * i
+    error_data = [0] * i
     x = nb_data()
     while j < i:
         tmp = 0
@@ -129,9 +140,9 @@ def average(i):
             tmp = data_CPU[h] + tmp
             h += 1
         moy[j] = tmp / x
+        error_data[j] = errorbar_data(data_CPU, moy[j], h)
         j += 1
-        print(moy)
-    plt.plot(range(i), moy, 'r--')
+    plt.errorbar(range(i), moy, error_data, fmt='r--')
     return
 
 # main program
