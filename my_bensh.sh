@@ -15,6 +15,9 @@ if [[ $2 != "" ]]; then
     make
     cd
     cd demo
+    if [[ $2 == "b4871f1b8321daf6c73dfe1a70cd6b0e00bdb05e" ]]; then
+        git checkout old-soma_clustering
+    fi
 fi
 
 FILES=*
