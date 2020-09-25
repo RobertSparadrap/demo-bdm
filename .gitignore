@@ -3,3 +3,7 @@ runtime.txt
 soma_clustering/output/
 soma_clustering_2/output/
 tumor_concept/output/
+
+soma_clustering/build/
+soma_clustering_2/build/
+tumor_concept/build/
