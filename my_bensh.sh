@@ -1,5 +1,6 @@
 #!/bin/bash
 
+#source /home/bdm/biodynamo/build/bin/thisbdm.sh
 if [[ $1 == "" ]]; then
     echo ./my_bensh [number_of_iteration] [branch/NULL_if_use_branch_master]
     exit
