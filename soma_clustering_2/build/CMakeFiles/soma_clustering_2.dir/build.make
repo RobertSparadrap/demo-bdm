@@ -123,6 +123,7 @@ soma_clustering_2_EXTERNAL_OBJECTS =
 soma_clustering_2: CMakeFiles/soma_clustering_2.dir/src/soma_clustering_2.cc.o
 soma_clustering_2: CMakeFiles/soma_clustering_2.dir/soma_clustering_2_dict.cc.o
 soma_clustering_2: CMakeFiles/soma_clustering_2.dir/build.make
+soma_clustering_2: /usr/lib/x86_64-linux-gnu/libnuma.so
 soma_clustering_2: /home/bdm/biodynamo/build/third_party/root/lib/libCore.so
 soma_clustering_2: /home/bdm/biodynamo/build/third_party/root/lib/libRIO.so
 soma_clustering_2: /home/bdm/biodynamo/build/third_party/root/lib/libNet.so
