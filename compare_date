@@ -1,0 +1,33 @@
+#!/usr/bin/python3
+
+import numpy as np
+import sys
+from math import *
+
+month = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+date_ref = [9, 17, '18:20:00', 2020]
+
+date_file = open("date.txt")
+Date = date_file.readline()
+Date = Date.strip()
+Date = Date.split()
+Date = [Date[0], int(Date[1]), Date[2], int(Date[3])]
+print(Date)
+
+if Date[3] < date_ref[3]:
+    print("1er exit")
+    exit(1)
+
+i = 0
+while i < 12:
+    if month[i] == Date[0]:
+        if i+1 < 9:
+            print("2eme exit")
+            exit(1)
+    i += 1
+
+if Date[1] < date_ref[1]:
+    print("3eme exit")
+    exit(1)
+
+exit(0)

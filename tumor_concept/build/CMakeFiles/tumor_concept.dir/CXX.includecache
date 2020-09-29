@@ -2172,10 +2172,6 @@ biodynamo.h
 benchmark/benchmark.h
 -
 
-/home/bdm/demo/tumor_concept/src/tumor_concept.cc
-tumor_concept.h
-/home/bdm/demo/tumor_concept/src/tumor_concept.h
-
 /home/bdm/demo/tumor_concept/src/tumor_concept.h
 biodynamo.h
 /home/bdm/demo/tumor_concept/src/biodynamo.h
